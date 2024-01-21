@@ -1,0 +1,60 @@
+/* Common styles for all views */
+
+/* Media query for larger views */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 16px; /* larger views */
+    }
+
+    header {
+        background-color: #4d6d88;
+        color: white;
+    }
+
+
+    main {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card.learning-activities-box,
+    .card {
+        display: inline-block;
+        height: 300px;
+        width: 45%;
+        margin-left: 20px;
+        margin-right: 10px;
+        box-shadow:0px 0px 15px 10px #4d6d88;
+    }
+
+    .card h3 {
+        border: 2px solid #ddd;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        background-color: #4d6d88;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .card,
+    .card.learning-activities-box {
+        width: 100%; 
+        max-width: none;
+        margin: 1rem 0;
+        padding: 1rem;
+        border: 1px solid #d7bbbb;
+        background-color: #e6f2ff;
+    }
+}
