@@ -32,7 +32,7 @@ section {
 .card {
     border: 2px solid black;
     border-radius: 8px;
-    background-color: rgb(214, 208, 208);
+    background-color: rgb(226, 224, 224);
     padding: 10px;
 }
 
@@ -45,8 +45,8 @@ section {
 }
 
 .card p, .card a {
-    font-size: 14px;
-    color: #555;
+    font-size: 16px;
+    color: black;
     margin-bottom: 5px;
 }
 

@@ -33,6 +33,12 @@
         margin-bottom: 20px;
     }
 
+    .navigation {
+        display: flex;
+        flex: 1 1 100%;
+        dis
+    }
+
     footer {
         background-color: #4d6d88;
         color: white;
