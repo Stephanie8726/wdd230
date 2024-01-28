@@ -131,6 +131,7 @@ title h2 {
   margin-top: 1px;
   background-color: var(--primary-color);
   padding: 10px;
+  height: 30px;
 }
 
 iframe {
