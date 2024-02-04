@@ -1,0 +1,23 @@
+@media screen and (min-width: 901px) {
+    main {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    section {
+      font-size: 20px;
+    }
+  
+    .card {
+      border: 2px solid #e91e63;
+    }
+  
+    .submit-button {
+      background-color: navy;
+      padding: 12px 24px;
+    }
+
+    #menu-button {
+        display: none; /* Hide the button for larger screens */
+    }
+  
+  }
