@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mactan Newtown Chamber of Commerce</title>
+  <title>Newtown Business Chamber</title>
   <meta name="description"
     content="WDD 230 - Web Frontend Development / Stephanie Dacullo Selanoba / Mactan Newtown Chamber of Commerce">
   <meta name="author" content="Stephanie Dacullo Selanoba">
@@ -27,97 +27,81 @@
   <div class="header-and-nav">
     <header>
       <img src="images/hero-image.jpg" alt="Hero Image">
-      <h1 class="name">Mactan Newtown Chamber of Commerce</h1>
+      <h1 class="name">Newtown</h1>
+      <p>Business Chamber</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="https://www.twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+      </div>
     </header>
-
     <nav class="navigation">
       <button id="menu-button"></button>
-      <a href="https://stephanie8726.github.io/wdd230/index.html" target="_blank">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Contact</a>
-      <a href="#">Join</a>
-      <a href="#">Login</a>
+      <div class="nav-container">
+        <a href="https://stephanie8726.github.io/wdd230/index.html" target="_blank">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Login</a>
+      </div>
     </nav>
   </div>
 
+  <button id="mode">Toggle Dark Mode</button>
+
   <main>
     <section class="join-chamber">
-      <p>Discover the benefits of being a chamber member and join us today!</p>
-      <a href="join.html" class="submit-button" target="_blank">Learn More</a>
+      <a href="join.html" class="submit-button" target="_blank">Join the Chamber</a>
+      <img src="images/newtown.jpg" alt="Mactan Newtown Beach Resort">
     </section>
 
     <section id="current-events" class="current-events">
-      <h2>Current Events 👇</h2>
-
-      <article class="event">
+      <div class="event">
+        <h2>Current Events</h2>
         <h3>Race for Our Heroes Fun</h3>
-        <p>Reflect on the success of the Mactan Newtown Race for Our Heroes Fun, a fantastic event that brought our
-          community together. We extend our gratitude to everyone who participated, making it a resounding success. The
-          event not only celebrated our heroes but also fostered a sense of unity and camaraderie. Stay tuned for more
-          upcoming events that promise to bring joy, wellness, and a strong community spirit!</p>
-      </article>
+        <p>United in purpose, stronger together! Stay tuned for more exciting events ahead. <a href="https://www.youtube.com/watch?v=jlrTJeTBsbQ" target="_blank">more info</a></p>
+      </div>
 
-      <article class="event">
-        <h3>Multisports Expo</h3>
-        <p>Explore a world of fitness and vitality at the Multisports Expo at the Mactan Newtown Sales & Information
-          Center, where sports enthusiasts and professionals come together to celebrate the diverse realm of multisport
-          activities. This event offers a unique opportunity to discover the latest trends, cutting-edge equipment, and
-          expert insights in various sports disciplines. From exhilarating demonstrations to interactive exhibits, the
-          Multisports Expo is a dynamic gathering that caters to athletes of all levels. Immerse yourself in the
-          excitement of the Multisports Expo and elevate your passion for a healthy and active lifestyle.</p>
-      </article>
-
-      <section class="weather-card">
+      <div class="weather-card">
         <h3>Weather Update</h3>
         <p id="weatherPlaceholder">Loading weather information...</p>
         <p id="visitCountPlaceholder">Loading visit count...</p>
         <p>Page Visits: 8</p>
-      </section>
-
-      <section id="company-spotlights" class="company-spotlights">
-        <article class="spotlight">
-          <img src="images/mactan-newtown-beach-resort.jpg" alt="Mactan Newtown Beach Resort">
-          <h3>Mactan Newtown Beach Resort</h3>
-          <p>Experience tropical paradise at Mactan Newtown Beach Resort. Nestled in the heart of Mactan Island, this
-            beachfront haven offers stunning views, luxurious accommodations, and a range of recreational activities.
-            Escape to pristine shores and indulge in a blend of relaxation and adventure at this idyllic resort.</p>
-          <a href="https://sugbo.ph/2018/mactan-newtown-beach-resort/" target="_blank">Learn More</a>
-        </article>
-
-        <article class="spotlight">
-          <img src="images/results-cx.jpg" alt="Results Cx">
-          <h3>Results Cx</h3>
-          <p>Results CX is a customer experience-focused entity dedicated to delivering exceptional solutions for
-            businesses. With a commitment to enhancing customer satisfaction and loyalty, Results CX employs innovative
-            strategies and technologies. Whether through customer support, engagement, or strategic insights, Results CX
-            aims to elevate the overall experience for clients and their customers, fostering lasting relationships and
-            positive outcomes.</p>
-          <a href="https://heyplaces.ph/02262347/ResultsCX_-_Cebu" target="_blank">Learn More</a>
-
-
-        </article>
-
-        <article class="spotlight">
-          <img src="images/manulife.jpg" alt="Manulife">
-          <h3>Manulife</h3>
-          <p>Manulife is a leading global financial services group with a strong presence in the Philippines. Committed
-            to helping people achieve their dreams and secure their financial future, Manulife provides a wide range of
-            insurance, investment, and wealth management solutions. Trusted for its reliability and innovation, Manulife
-            is dedicated to empowering individuals to live confidently.</p>
-          <a href="https://www.manulife.com.ph/" target="_blank">Learn More</a>
-        </article>
-      </section>
+      </div>
     </section>
 
+    <section id="company-spotlights" class="company-spotlights">
+      <article class="spotlight">
+        <h3>🌴 Mctan Resort</h3>
+        <p>Tropical Paradise Escape<br>mctanewtown1@resort.com<br>+639784365125</b></p>
+        <a href="https://sugbo.ph/2018/mactan-newtown-beach-resort/" target="_blank">Website</a>
+      </article>
+
+      <article class="spotlight">
+        <h3>👩🏻‍💻 Results Cx</h3>
+        <p>Customer-centric Excellence Achieved<br>results2@cx.com<br>+639124563112</p>
+        <a href="https://heyplaces.ph/02262347/ResultsCX_-_Cebu" target="_blank">Website</a>
+      </article>
+
+      <article class="spotlight">
+        <h3>💸 Manulife</h3>
+        <p>Empowering Financial Futures<br>manulife@financial.com<br>+639417845600</p>
+        <a href="https://www.manulife.com.ph/" target="_blank">Website</a>
+      </article>
+    </section>
   </main>
 
   <footer>
-    <p><span id="copyright"></span><br>🌻 Stephanie Dacullo Selanoba 🌻<br>WDD 230 - Web Frontend Development</p>
-    <p>📧 stephanie.laruga101@yahoo.com <br>☎️ +639684334504</p>
-    <p>Ibo Lapu-Lapu City, Cebu Philippines 🇵🇭 6015</p>
+    <img src="images/hero-image.jpg" alt="Hero Image">
+    <p>Newtown Business Chamber<br>Mactan Newtown Lapu-Lapu City, Cebu Philippines 6015</p>
+    <!-- <div class="map-container">
+      <div id="map"></div> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d84459.37326181955!2d124.01940599374602!3d10.252338482105115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1684420228219!5m2!1sen!2sph"
+      width="1000" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">Map Location</iframe>
+    </div> -->
+    <p>📧 newtown@mctan18.org<br>☎️ +6398794561230</p>
+    <p><span id="copyright"></span> Newtown Business Chamber<br>🌻 Stephanie Dacullo Selanoba 🌻<br>WDD 230 - Web Frontend Development<br></p>
     <p id="lastModified"></p>
   </footer>
+
   <script src="scripts/getdates.js"></script>
 </body>
-
-</html>
