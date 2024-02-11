@@ -88,9 +88,8 @@ header p {
 .join-chamber img {
   width: 100%;
   height: auto;
-  margin-bottom: 20px; 
-  margin-bottom: -25px;
-  margin-top: -60px; 
+  margin-bottom: 10px; 
+  margin-top: -120px; 
 }
 
 .submit-button {
@@ -111,6 +110,10 @@ header p {
 .company-spotlights {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+}
+
+.company-spotlights h2 {
+  grid-column: 1 / -1;
 }
 
 p {
