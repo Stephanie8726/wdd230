@@ -33,31 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
   visitCountPlaceholder.textContent = `Visits: ${visitCount}`;
 });
 
-// to pin the map
-// function initMap() {
-//   var center = { lat: 10.252338482105115, lng: 124.01940599374602 };
-//   var map = new google.maps.Map(document.getElementById('map'), {
-//       zoom: 10,
-//       center: center
-//   });
-
-//   var marker = new google.maps.Marker({
-//       position: center,
-//       map: map
-//   });
-
-//   getLocationData('Cebu, Philippines');
-
-//   function getLocationData(location) {
-//     const apiKey = 'AIzaSyCAC8eP20iVmcCd6y-W3WTnCEgZmLId0M0';
-//     const apiUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(location)}&key=${apiKey}`;
-  
-// }}
-
-
-// dark mode
-// Add this script in your JavaScript file or within <script> tags in your HTML
-
 // Function to toggle dark mode
 const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
