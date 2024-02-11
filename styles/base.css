@@ -1,3 +1,4 @@
+/* Importing Roboto font */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
 :root {
@@ -15,7 +16,7 @@ body {
 
 /* For everything in WDD230 */
 main {
-  display: block;
+  display: flex;
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
@@ -64,27 +65,15 @@ header h1 {
 }
 
 #menu-button.open::before {
-	content: "❎";
+  content: "❎";
 }
 
 .navigation.open a {
   display: flex;
 }
 
-/* For Home, Site Plan, Chamber, Byu-Idaho, Scripture text */
-.navigation {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  background-color: var(--primary-color);
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-}
-
 .open a {
-	display: block;
+  display: block;
 }
 
 /* For navigation links */
@@ -97,19 +86,19 @@ header h1 {
 }
 
 .navigation a:hover {
-	background-color: #bbb;
-	color: #333;
-	font-weight: 700;
+  background-color: #bbb;
+  color: #333;
+  font-weight: 700;
 }
 
-
 /* For WDD 230: Web Frontend Development TEXT */
-title h2 {
-  color: #333;
-  font-size: 18px;
-  text-align: left;
-  border-bottom: 1px solid #cccccc;
-  padding-bottom: 5px;
+h2 {
+  font-size: 24px;
+  color: #fff;
+  background-color: #4d6d88;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
 }
 
 /* For weather information, Page Visits, etc. TEXT */
@@ -117,10 +106,6 @@ title h2 {
   margin-bottom: 10px;
   border: 1px solid #c8d4e0;
   border-radius: 2px;
-}
-
-.card p {
-  text-align: center;
 }
 
 /* For learning activities whole... */
@@ -164,22 +149,46 @@ footer p {
 @media (max-width: 600px) {
   main {
     padding: 10px;
-    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .navigation {
-  display: flex;
-  flex-direction: row;
-  flex: 1 1 100%;
+    display: none;
+    order: 3;
+    margin-top: 10px;
   }
-
-  .navigation a {
-    display: none; /* to remove the nav links */
-		flex: 1 1 100%;
-	}
 
   #menu-button {
     display: block;
+    order: 2;
+    align-self: flex-end;
+    margin-top: 10px;
   }
 
+  .navigation.open {
+    display: flex;
+    flex-direction: column;
+    background-color: #507a62;
+  }
+
+  .navigation.open a {
+    display: block;
+    text-align: center;
+  }
+
+  .navigation a {
+    display: none;
+    flex: 1 1 100%;
+    margin-right: 20px;
+  }
+
+  footer {
+    position: relative;
+    margin-top: auto;
+    order: 4;
+  }
+}
+.header-and-nav {
+  grid-template-columns: 1fr;
 }
