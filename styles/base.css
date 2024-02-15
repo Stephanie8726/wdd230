@@ -13,7 +13,6 @@ body {
   color: #333;
   margin: 10px;
   border: 1px solid gray;
-  box-sizing: border-box;
 }
 
 .hero {
