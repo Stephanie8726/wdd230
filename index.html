@@ -22,7 +22,7 @@
 <body>
 
   <header>
-    <img src="images/photo1.jpg" alt="My Photo">
+    <img src="images/photo.webp" alt="My Photo">
     <h1 class="name">Stephanie Dacullo Selanoba</h1>
   </header>
 
@@ -36,9 +36,19 @@
   </nav>
 
   <main>
-
+    <div class="hero">
+    <picture>
+      <source media="(max-width: 400px)" srcset="images/louisville-temple.webp" >
+      <source media="(max-width: 960px)" srcset="images/louisville-temple.webp" >
+      <img src="images/louisville-temple.webp" alt="Louisville Temple" width="1500" height="750">
+    </picture>
+    <div class="herolabel">
+			<p>Louisville Temple</p>
+		</div>
+	</div>
     <h2>WDD 230: Web Frontend Development</h2>
 
+    <div class="activities">
     <section class="card learning-activities-box">
       <h3>Learning Activities</h3>
       <ol id="LearningActivities">
@@ -50,6 +60,10 @@
         <li><a href="lesson03/chamber-site-plan.html" target="_blank">Mactan Newtown Chamber of Commerce</a></li>
         <li><a href="https://codepen.io/Stephanie-Dacullo/pen/MWxQwZx?editors=0100" target="_blank" rel="noopener noreferrer">Pseudo-class</a></li>
         <li><a href="lesson05/bom.html" target="_blank">Book of Mormon - Top 10</a></li>
+        <li><a href="lesson03/images/landscape.webp" target="_blank">Webp</a></li>
+        <li><a href="responsive-images.html" target="_blank">Responsive Image</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
         <li><a href="#"></a></li>
         <li><a href="#"></a></li>
         <li><a href="#"></a></li>
@@ -62,7 +76,7 @@
       <p id="visitCountPlaceholder">Loading visit count...</p>
       <p>Page Visits: 8</p>
     </section>
-
+  </div>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d84459.37326181955!2d124.01940599374602!3d10.252338482105115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1684420228219!5m2!1sen!2sph"
       width="1000" height="150" style="border:0;" allowfullscreen="" loading="lazy"
