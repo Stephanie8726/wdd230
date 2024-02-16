@@ -26,7 +26,7 @@
 
   <div class="header-and-nav">
     <header>
-      <img src="images/hero-image.webp" alt="Hero Image">
+      <img src="images/wdd230-org.webp" alt="Hero Image">
       <h1 class="name">Newtown City<br>Chamber of Commerce</h1>
       <div class="social-links">
         <a href="https://www.facebook.com"><img src="images/facebook.webp" alt="Facebook"></a>
@@ -48,11 +48,19 @@
   <button id="mode">Toggle Dark Mode</button>
 
   <main>
-    <section class="join-chamber">
-      <h2>Click 👇</h2>
-      <a href="join.html" class="submit-button" target="_blank">Join the Chamber</a>
-      <img src="images/newtown.webp" alt="Mactan Newtown Beach Resort">
-    </section>
+
+    <div class="hero">
+      <picture>
+        <source media="(max-width: 480px)" srcset="images/small.webp">
+        <source media="(max-width: 960px)" srcset="images/medium.webp">
+        <source srcset="images/large.webp">
+    
+        <img src="images/wdd230-org-large.jpg" alt="WDD 230" width="1500" height="1000">
+      </picture>
+      <div class="herolabel">
+        <p>WDD 230 - <span class="image-size"></span></p>
+      </div>
+    </div>
 
     <section id="current-events" class="current-events">
       <div class="event">
@@ -61,13 +69,20 @@
         <p>United in purpose, stronger together! Stay tuned for more exciting events ahead. <a href="https://www.youtube.com/watch?v=jlrTJeTBsbQ" target="_blank">more info</a></p>
       </div>
 
-      <div class="weather-card">
-        <h3>Weather Update</h3>
-        <p id="weatherPlaceholder">Loading weather information...</p>
-        <p id="visitCountPlaceholder">Loading visit count...</p>
-        <p>Page Visits: 8</p>
-      </div>
+      <section class="weather-card">
+        <h2 id="weatherName">Weather Update</h2>
+        <img src="" id="weatherIcon" alt="Weather Icon">
+        <div class="temperature">
+            <p><span id="tempDegrees">23.68</span>°C</p>
+            <p id="tempName">Clouds</p>
+        </div>
+    
+        <div class="windchill">
+            <p id="windSpeed">Gentle Breeze: 3.01 km/h</p>
+            <p id="feelsLike">Feels Like: 24.18°C</p>
+        </div>
     </section>
+    
 
     <section id="company-spotlights" class="company-spotlights">
       <h2>Company Spotlights</h2>
@@ -101,6 +116,7 @@
   </footer>
 
   <script src="scripts/getdates.js"></script>
+  <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
