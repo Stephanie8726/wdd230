@@ -253,6 +253,11 @@ nav a:hover {
     padding: 3px 6px;
     border-radius: 3px;
   }
+
+  #menu-button {
+    display: block;
+    background-color: white;
+}
 }
 
 /* Medium viewport */
