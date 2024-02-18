@@ -55,10 +55,11 @@ body {
   display: flex;
   align-items: center;
   margin-top: 10px;
+  margin-right: 100px;
 }
 
 .social-links a {
-  margin-right: 20px;
+  margin-right: 2px;
 }
 
 header {
@@ -69,6 +70,7 @@ header {
 header img {
   max-width: 100px;
   border-radius: 50px;
+  margin-left: -15px;
 }
 
 header h1.name {
@@ -149,8 +151,7 @@ footer p {
 nav a {
   text-decoration: none;
   color: white;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 5px;
   transition: background-color 0.3s ease;
 }
 
