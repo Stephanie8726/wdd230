@@ -174,11 +174,8 @@ nav a:hover {
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
-	font-size: 3rem;
 	cursor: pointer;
 	font-size: 2rem;
-  margin-right: 10px;
-  margin-top: 10px;
   border-radius: 10px;
   border: solid rgb(12, 12, 118);
 }
@@ -223,7 +220,6 @@ nav a:hover {
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
-	font-size: 3rem;
 	cursor: pointer;
 	font-size: 2rem;
   margin-right: 110px;
