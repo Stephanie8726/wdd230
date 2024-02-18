@@ -2,121 +2,123 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Newtown City Chamber of Commerce</title>
-  <meta name="description"
-    content="WDD 230 - Web Frontend Development / Stephanie Dacullo Selanoba / Mactan Newtown Chamber of Commerce">
-  <meta name="author" content="Stephanie Dacullo Selanoba">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/medium.css">
-  <link rel="stylesheet" href="styles/larger.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700%7CLora:400,700&display=swap">
-  <link rel="icon" href="images/favicon.ico">
-  <meta property="og:title"
-    content="Stephanie Dacullo Selanoba - WDD 230 - Web Frontend Development / Mactan Newtown Chamber of Commerce">
-  <meta property="og:type" content="website">
-  <meta property="og:image"
-    content="https://photos.google.com/search/_tra_/photo/AF1QipMwN71DBEPipuMOtUPHt2OLsQ0On6WMUo5S1vuX">
-  <meta property="og:url" content="https://stephanie8726.github.io/wdd230/chamber/index.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newtown City Chamber of Commerce</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development / Stephanie Dacullo Selanoba / Mactan Newtown Chamber of Commerce">
+    <meta name="author" content="Stephanie Dacullo Selanoba">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700%7CLora:400,700&display=swap">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title"
+        content="Stephanie Dacullo Selanoba - WDD 230 - Web Frontend Development / Mactan Newtown Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://photos.google.com/search/_tra_/photo/AF1QipMwN71DBEPipuMOtUPHt2OLsQ0On6WMUo5S1vuX">
+    <meta property="og:url" content="https://stephanie8726.github.io/wdd230/chamber/index.html">
 </head>
 
 <body>
 
-  <div class="header-and-nav">
-    <header>
-      <img src="images/wdd230-org.webp" alt="Hero Image">
-      <h1 class="name">Newtown City<br>Chamber of Commerce</h1>
-      <div class="social-links">
-        <a href="https://www.facebook.com"><img src="images/facebook.webp" alt="Facebook"></a>
-        <a href="https://www.linkedin.com"><img src="images/linkedin.webp" alt="LinkedIn"></a>
-        <a href="https://www.instagram.com"><img src="images/instagram.webp" alt="Instagram"></a>
-      </div>
-    </header>
-    <nav class="navigation">
-      <button id="menu-button"></button>
-      <div class="nav-container">
-        <a href="https://stephanie8726.github.io/wdd230/index.html" target="_blank">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
-        <a href="#">Login</a>
-      </div>
-    </nav>
-  </div>
-
-  <button id="mode">Toggle Dark Mode</button>
-
-  <main>
-
-    <div class="hero">
-      <picture>
-        <source media="(max-width: 480px)" srcset="images/small.webp">
-        <source media="(max-width: 960px)" srcset="images/medium.webp">
-        <source srcset="images/large.webp">
-    
-        <img src="images/wdd230-org-large.jpg" alt="WDD 230" width="1500" height="1000">
-      </picture>
-      <div class="herolabel">
-        <p>WDD 230 - <span class="image-size"></span></p>
-      </div>
+    <div class="header-and-nav">
+        <header>
+            <img src="images/wdd230-org.webp" alt="Hero Image">
+            <h1 class="name">Newtown City<br>Chamber of Commerce</h1>
+            <div class="social-links">
+                <a href="https://www.facebook.com"><img src="images/facebook.webp" alt="Facebook"></a>
+                <a href="https://www.linkedin.com"><img src="images/linkedin.webp" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com"><img src="images/instagram.webp" alt="Instagram"></a>
+            </div>
+        </header>
+        <nav class="navigation">
+            <button id="menu-button"></button>
+            <div class="nav-container">
+                <a href="https://stephanie8726.github.io/wdd230/index.html" target="_blank">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Login</a>
+            </div>
+        </nav>
     </div>
 
-    <section id="current-events" class="current-events">
-      <div class="event">
-        <h2>Current Events</h2>
-        <h3>Race for Our Heroes Fun</h3>
-        <p>United in purpose, stronger together! Stay tuned for more exciting events ahead. <a href="https://www.youtube.com/watch?v=jlrTJeTBsbQ" target="_blank">more info</a></p>
-      </div>
+    <button id="mode">Toggle Dark Mode</button>
 
-      <section class="weather-card">
-        <h2 id="weatherName">Weather Update</h2>
-        <img src="" id="weatherIcon" alt="Weather Icon">
-        <div class="temperature">
-            <p><span id="tempDegrees">23.68</span>°C</p>
-            <p id="tempName">Clouds</p>
-        </div>
+    <main>
+
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 480px)" srcset="images/small.webp">
+                <source media="(max-width: 960px)" srcset="images/medium.webp">
+                <source srcset="images/large.webp">
     
-        <div class="windchill">
-            <p id="windSpeed">Gentle Breeze: 3.01 km/h</p>
-            <p id="feelsLike">Feels Like: 24.18°C</p>
+                <img src="images/wdd230-org-large.jpg" alt="WDD 230" width="1500" height="1000">
+            </picture>
+            <div class="herolabel">
+                <p>WDD 230 - <span class="image-size"></span></p>
+            </div>
         </div>
-    </section>
+
+        <section id="current-events" class="current-events">
+            <div class="event">
+                <h2>Current Events</h2>
+                <h3>Race for Our Heroes Fun</h3>
+                <p>United in purpose, stronger together! Stay tuned for more exciting events ahead. <a
+                        href="https://www.youtube.com/watch?v=jlrTJeTBsbQ" target="_blank">more info</a></p>
+            </div>
+
+            <div class="weather-card">
+                <h2 id="weatherName">Weather Update</h2>
+                <img src="" id="weatherIcon" alt="Weather Icon">
+                <div class="temperature">
+                    <p><span id="tempDegrees">23.68</span>°C</p>
+                    <p id="tempName">Clouds</p>
+                </div>
     
+                <div class="windchill">
+                    <p id="windSpeed">Gentle Breeze: 3.01 km/h</p>
+                    <p id="feelsLike">Feels Like: 24.18°C</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="company-spotlights" class="company-spotlights">
-      <h2>Company Spotlights</h2>
-      <article class="spotlight">
-        <h3>🌴 Mctan Resort</h3>
-        <p>Tropical Paradise Escape<br>mctanewtown1@resort.com<br>+639784365125</p>
-        <a href="https://sugbo.ph/2018/mactan-newtown-beach-resort/" target="_blank">Website</a>
-      </article>
+        <section id="company-spotlights" class="company-spotlights">
+            <h2>Company Spotlights</h2>
+            <article class="spotlight">
+                <h3>🌴 Mctan Resort</h3>
+                <p>Tropical Paradise Escape<br>mctanewtown1@resort.com<br>+639784365125</p>
+                <a href="https://sugbo.ph/2018/mactan-newtown-beach-resort/" target="_blank">Website</a>
+            </article>
 
-      <article class="spotlight">
-        <h3>👩🏻‍💻 Results Cx</h3>
-        <p>Customer-centric Excellence Achieved<br>results2@cx.com<br>+639124563112</p>
-        <a href="https://heyplaces.ph/02262347/ResultsCX_-_Cebu" target="_blank">Website</a>
-      </article>
+            <article class="spotlight">
+                <h3>👩🏻‍💻 Results Cx</h3>
+                <p>Customer-centric Excellence Achieved<br>results2@cx.com<br>+639124563112</p>
+                <a href="https://heyplaces.ph/02262347/ResultsCX_-_Cebu" target="_blank">Website</a>
+            </article>
 
-      <article class="spotlight">
-        <h3>💸 Manulife</h3>
-        <p>Empowering Financial Futures<br>manulife@financial.com<br>+639417845600</p>
-        <a href="https://www.manulife.com.ph/" target="_blank">Website</a>
-      </article>
-    </section>
-</main>
+            <article class="spotlight">
+                <h3>💸 Manulife</h3>
+                <p>Empowering Financial Futures<br>manulife@financial.com<br>+639417845600</p>
+                <a href="https://www.manulife.com.ph/" target="_blank">Website</a>
+            </article>
+        </section>
+    </main>
 
+    <footer>
+        <img src="images/hero-image.jpg" alt="Hero Image">
+        <p>Newtown Business Chamber<br>Mactan Newtown Lapu-Lapu City, Cebu Philippines 6015</p>
+        <p>📧 newtown@mctan18.org<br>☎️ +6398794561230</p>
+        <p><span id="copyright"></span> Newtown Business Chamber<br>🌻 Stephanie Dacullo Selanoba 🌻<br>WDD 230 -
+            Web Frontend Development<br></p>
+        <p id="lastModified"></p>
+    </footer>
 
-  <footer>
-    <img src="images/hero-image.jpg" alt="Hero Image">
-    <p>Newtown Business Chamber<br>Mactan Newtown Lapu-Lapu City, Cebu Philippines 6015</p>
-    <p>📧 newtown@mctan18.org<br>☎️ +6398794561230</p>
-    <p><span id="copyright"></span> Newtown Business Chamber<br>🌻 Stephanie Dacullo Selanoba 🌻<br>WDD 230 - Web Frontend Development<br></p>
-    <p id="lastModified"></p>
-  </footer>
-
-  <script src="scripts/getdates.js"></script>
-  <script src="scripts/windchill.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
+
