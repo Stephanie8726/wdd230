@@ -18,22 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
       menuButton.classList.toggle('open');
   });
 
-  // Get weather update and update placeholder
-  getWeatherUpdate().then(weatherUpdate => {
-      const weatherPlaceholder = document.getElementById("weatherPlaceholder");
-      weatherPlaceholder.textContent = weatherUpdate;
-  });
-
-  // Update visit count
-  let visitCount = localStorage.getItem('visitCount') || 0;
-  visitCount++;
-  localStorage.setItem('visitCount', visitCount);
-
-  const visitCountPlaceholder = document.getElementById("visitCountPlaceholder");
-  visitCountPlaceholder.textContent = `Visits: ${visitCount}`;
-});
-
-// Function to toggle dark mode
+  // Function to toggle dark mode
 const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
 
@@ -47,4 +32,31 @@ modeButton.addEventListener("click", () => {
 		main.style.color = "#000";
 		modeButton.textContent = "🕶️";
 	}
+});
+
+  // Get weather update and update placeholder
+  function getWeatherUpdate() {
+    return fetch(`https://api.openweathermap.org/data/2.5/weather?q=Cebu&units=metric&appid=9f09a5eccc0510d7c21cbba3d3d1c791`)
+        .then(response => response.json())
+        .then(data => {
+            return `Weather update: ${data.weather[0].description}`;
+        })
+        .catch(error => {
+            console.error('Error fetching weather data:', error);
+            return 'Weather data not available';
+        });
+}
+
+getWeatherUpdate().then(weatherUpdate => {
+  const weatherNameElement = document.getElementById("weatherName");
+  weatherNameElement.textContent = weatherUpdate;
+});
+
+  // Update visit count
+  let visitCount = localStorage.getItem('visitCount') || 0;
+  visitCount++;
+  localStorage.setItem('visitCount', visitCount);
+
+  const visitCountPlaceholder = document.getElementById("visitCountPlaceholder");
+  visitCountPlaceholder.textContent = `Visits: ${visitCount}`;
 });

@@ -1,23 +1,24 @@
-const speed = document.querySelector('#windSpeed');
-const temp = document.querySelector('#tempDegrees');
-const tempName = document.querySelector('#tempName');
-const feel = document.querySelector('#feelsLike');
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Cebu&units=metric&appid=9f09a5eccc0510d7c21cbba3d3d1c791`;
+document.addEventListener("DOMContentLoaded", function () {
+    const tempDegreeElement = document.getElementById("tempDegree");
+    const windSpeedElement = document.getElementById("windSpeed");
+    const windChillElement = document.getElementById("windChill");
 
+    if (tempDegreeElement && windSpeedElement && windChillElement) {
+        const tempDegree = parseFloat(tempDegreeElement.textContent);
+        const windSpeed = parseFloat(windSpeedElement.textContent);
 
-fetch(apiUrl)
-    .then((response) => response.json())
-    .then((jsObject) => {
-        console.log(jsObject);
-        const iconsrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
-        const desc = jsObject.weather[0].description;
-        document.querySelector('#weatherIcon').setAttribute('src', iconsrc);
-        document.querySelector('#weatherIcon').setAttribute('alt', desc);
-
-        feel.innerHTML = `Feels Like : ${jsObject.main.feels_like}&deg;C`;
-        temp.textContent = `${jsObject.main.temp}`;
-        speed.textContent = `Wind Speed : ${jsObject.wind.speed}`;
-        tempName.textContent = desc;
+        if (!isNaN(tempDegree) && !isNaN(windSpeed)) {
+            if (tempDegree <= 50 && windSpeed > 3.0) {
+                const windChill = calculateWindChill(tempDegree, windSpeed);
+                windChillElement.textContent = `Wind Chill: ${windChill}°F`;
+            } else {
+                windChillElement.textContent = "Wind Chill: N/A";
+            }
+        }
+    }
 });
 
-  
+function calculateWindChill(temperature, windSpeed) {
+    const windChill = 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16);
+    return Math.round(windChill);
+}
