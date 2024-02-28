@@ -35,4 +35,3 @@ localStorage.setItem("numVisits-ls", numVisits);
 
 
 });
-

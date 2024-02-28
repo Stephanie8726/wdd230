@@ -47,16 +47,30 @@ modeButton.addEventListener("click", () => {
         });
 }
 
-getWeatherUpdate().then(weatherUpdate => {
-  const weatherNameElement = document.getElementById("weatherName");
-  weatherNameElement.textContent = weatherUpdate;
-});
+// getWeatherUpdate().then(weatherUpdate => {
+//   const weatherNameElement = document.getElementById("weatherName");
+//   weatherNameElement.textContent = weatherUpdate;
+// });
 
-  // Update visit count
-  let visitCount = localStorage.getItem('visitCount') || 0;
-  visitCount++;
-  localStorage.setItem('visitCount', visitCount);
 
-  const visitCountPlaceholder = document.getElementById("visitCountPlaceholder");
-  visitCountPlaceholder.textContent = `Visits: ${visitCount}`;
+// date and number of visits
+const todayDisplay = document.querySelector(".today");
+const visitsDisplay = document.querySelector(".visits");
+
+let numVisits = Number(window.localStorage.getItem("visits-list"));
+
+if (numVisits !== 0) {
+    visitsDisplay.textContent = numVisits;
+} else {
+    visitsDisplay.textContent = `This is your first visit!`;
+}
+
+numVisits++;
+
+localStorage.setItem("visits-list", numVisits);
+
+const today = new Date();
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+todayDisplay.textContent = today.toLocaleDateString('en-US', options);
+
 });

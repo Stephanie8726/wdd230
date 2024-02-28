@@ -19,5 +19,7 @@
     #menu-button {
         display: none;
     }
-  
+    .discover img {
+      height: 350px;
+    }
   }
