@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newtown City Chamber of Commerce</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development / Stephanie Dacullo Selanoba / Mactan Newtown Chamber of Commerce">
+    <meta name="author" content="Stephanie Dacullo Selanoba">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700%7CLora:400,700&display=swap">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title"
+        content="Stephanie Dacullo Selanoba - WDD 230 - Web Frontend Development / Mactan Newtown Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://photos.google.com/search/_tra_/photo/AF1QipMwN71DBEPipuMOtUPHt2OLsQ0On6WMUo5S1vuX">
+    <meta property="og:url" content="https://stephanie8726.github.io/wdd230/chamber/index.html">
+</head>
+
+<body>
+
+    <div class="header-and-nav">
+        <header>
+            <img src="images/hero-image.webp" alt="Hero Image">
+            <h1 class="name">Newtown City<br>Chamber of Commerce</h1>
+            <div class="social-links">
+                <a href="https://www.facebook.com"><img src="images/facebook.webp" alt="Facebook"></a>
+                <a href="https://www.linkedin.com"><img src="images/linkedin.webp" alt="LinkedIn"></a>
+            </div>
+        </header>
+        <nav class="navigation">
+            <button id="menu-button"></button>
+            <div class="nav-container">
+                <a href="https://stephanie8726.github.io/wdd230/index.html" target="_blank">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Login</a>
+            </div>
+        </nav>
+    </div>
+    <button id="mode">Toggle Dark Mode</button>
+
+    <div class="sidebar">
+        <div id="sidebar-content"></div>
+    </div>
+
+    <main class="discover">
+        <p>Number of visits: <span class="visits"></span></p>
+        <p>Today's date: <span class="today"></span></p>
+        <picture>
+
+            <source srcset="images/expo.webp" media="(min-width: 600px)">
+            <img src="images/expo.webp" alt="Business Expo" loading="lazy" width="350" height="auto">
+        </picture>
+        <div>
+            <h3>Business Expo</h3>
+            <p>This is our annual business expo held in downtown Newtown. Join us to explore
+                opportunities, network, and learn from industry leaders.</p>
+        </div>
+
+        <picture>
+            <source srcset="images/marathon.webp" media="(min-width: 600px)">
+            <img src="images/marathon.webp" alt="Marathon" loading="lazy" width="200" height="auto">
+        </picture>
+        <div>
+            <h3>Marathon</h3>
+            <p>Join us for the Newtown City Marathon, a community event promoting health, fitness, and
+                solidarity. Run or walk through scenic routes with friends and family.</p>
+        </div>
+
+        <picture>
+            <source srcset="images/street-fair.webp" media="(min-width: 600px)">
+            <img src="images/street-fair.webp" alt="Street Fair" loading="lazy" width="200" height="auto">
+        </picture>
+        <div>
+            <h3>Street Fair</h3>
+            <p>Experience the vibrant culture of Newtown at our annual Street Fair. Enjoy local cuisines,
+                artisan crafts, live music, and much more!</p>
+        </div>
+
+        <picture>
+            <source srcset="images/outdoor-movie-night.webp" media="(min-width: 600px)">
+            <img src="images/outdoor-movie-night.webp" alt="Outdoor Movie Night" loading="lazy" width="200"
+                height="auto">
+        </picture>
+        <div>
+            <h3>Outdoor Movie Night</h3>
+            <p>Join us for a special evening under the stars at Newtown's Outdoor Movie Night. Bring your
+                blankets and snacks for a cozy movie experience with friends and family.</p>
+        </div>
+
+        <picture>
+            <source srcset="images/history-heritage.webp" media="(min-width: 600px)">
+            <img src="images/history-heritage.webp" alt="History & Heritage" loading="lazy" width="200" height="auto">
+        </picture>
+        <div>
+            <h3>History & Heritage</h3>
+            <p>Explore Newtown's rich history and heritage with guided walking tours. Discover hidden gems and
+                fascinating stories of our city's past.</p>
+        </div>
+
+        <picture>
+            <source srcset="images/summit.webp" media="(min-width: 600px)">
+            <img src="images/summit.webp" alt="Summit" loading="lazy" width="200" height="auto">
+        </picture>
+        <div>
+            <h3>Summit</h3>
+            <p>Celebrate the spirit of entrepreneurship at our annual Startup Summit. Connect with investors,
+                mentors, and fellow entrepreneurs to fuel your business aspirations.</p>
+        </div>
+
+    </main>
+    </div>
+
+    <footer>
+        <img src="images/hero-image.webp" alt="Hero Image">
+        <p>Newtown Business Chamber<br>Mactan Newtown Lapu-Lapu City, Cebu Philippines 6015</p>
+        <p>📧 newtown@mctan18.org<br>☎️ +6398794561230</p>
+        <p id="copyright">Copyright © Your Company</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
