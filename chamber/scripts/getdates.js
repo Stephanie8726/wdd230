@@ -54,59 +54,60 @@ modeButton.addEventListener("click", () => {
 
 
 // date and number of visits
-// const todayDisplay = document.querySelector(".today");
-// const visitsDisplay = document.querySelector(".visits");
+const todayDisplay = document.querySelector(".today");
+const visitsDisplay = document.querySelector(".visits");
 
-// let numVisits = Number(window.localStorage.getItem("visits-list"));
+let numVisits = Number(window.localStorage.getItem("visits-list"));
 
-// if (numVisits !== 0) {
-//     visitsDisplay.textContent = numVisits;
-// } else {
-//     visitsDisplay.textContent = `This is your first visit!`;
-// }
-
-// numVisits++;
-
-// localStorage.setItem("visits-list", numVisits);
-
-// const today = new Date();
-// const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-// todayDisplay.textContent = today.toLocaleDateString('en-US', options);
-
-document.addEventListener("DOMContentLoaded", function() {
-    const todayDisplay = document.querySelector(".today");
-    const visitsDisplay = document.querySelector(".visits");
-    const sidebarContent = document.getElementById("sidebar-content");
-
-    let numVisits = Number(window.localStorage.getItem("visits-list"));
-    const lastVisitTime = window.localStorage.getItem("last-visit-time");
-
-    if (!lastVisitTime) {
-        sidebarContent.textContent = "Welcome! Let us know if you have any questions.";
-    } else {
-        const lastVisitDate = new Date(lastVisitTime);
-        const currentTime = new Date();
-        const timeDiff = currentTime.getTime() - lastVisitDate.getTime();
-        const oneDay = 1000 * 60 * 60 * 24;
-        const daysDiff = Math.floor(timeDiff / oneDay);
-
-        if (daysDiff < 1) {
-            sidebarContent.textContent = "Back so soon! Awesome!";
-        } else {
-            sidebarContent.textContent = `You last visited ${daysDiff === 1 ? '1 day' : `${daysDiff} days`} ago.`;
-        }
-    }
-
-    numVisits++;
-    window.localStorage.setItem("visits-list", numVisits);
-    window.localStorage.setItem("last-visit-time", new Date().toString());
-
+if (numVisits !== 0) {
     visitsDisplay.textContent = numVisits;
+} else {
+    visitsDisplay.textContent = `This is your first visit!`;
+}
 
-    const today = new Date();
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    todayDisplay.textContent = today.toLocaleDateString('en-US', options);
-});
+numVisits++;
+
+localStorage.setItem("visits-list", numVisits);
+
+const today = new Date();
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+todayDisplay.textContent = today.toLocaleDateString('en-US', options);
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     const todayDisplay = document.querySelector(".today");
+//     const visitsDisplay = document.querySelector(".visits");
+//     const sidebarContent = document.getElementById("sidebar-content");
+
+//     let numVisits = Number(window.localStorage.getItem("visits-list"));
+//     const lastVisitTime = window.localStorage.getItem("last-visit-time");
+
+//     if (!lastVisitTime) {
+//         sidebarContent.textContent = "Welcome! Let us know if you have any questions.";
+//     } else {
+//         const lastVisitDate = new Date(lastVisitTime);
+//         const currentTime = new Date();
+//         const timeDiff = currentTime.getTime() - lastVisitDate.getTime();
+//         const oneDay = 1000 * 60 * 60 * 24;
+//         const daysDiff = Math.floor(timeDiff / oneDay);
+
+//         if (daysDiff < 1) {
+//             sidebarContent.textContent = "Back so soon! Awesome!";
+//         } else {
+//             sidebarContent.textContent = `You last visited ${daysDiff === 1 ? '1 day' : `${daysDiff} days`} ago.`;
+//         }
+//     }
+
+//     numVisits++;
+//     window.localStorage.setItem("visits-list", numVisits);
+//     window.localStorage.setItem("last-visit-time", new Date().toString());
+
+//     visitsDisplay.textContent = numVisits;
+
+//     const today = new Date();
+//     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+//     todayDisplay.textContent = today.toLocaleDateString('en-US', options);
+// });
+
 
 
 });

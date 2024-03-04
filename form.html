@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephanie Dacullo Selanoba - WDD 230 - Web Frontend Development / Form Build</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development / Stephanie Dacullo Selanoba / Course Assignment Portal">
+    <meta name="author" content="Stephanie Dacullo Selanoba">
+    <link rel="stylesheet" href="styles/form.css">
+    <meta property="og:title" content="Stephanie Dacullo Selanoba - WDD 230 - Web Frontend Development / Form Build">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://photos.google.com/photo/AF1QipMHDSIn5BQ0nUMwlhWk2CrSa86ekmRkpW9z0VUP">
+    <meta property="og:url" content="https://stephanie8726.github.io/wdd230/index.html">
+
+</head>
+
+<body>
+
+    <div class="header-and-nav">
+        <header>
+            <<img src="images/photo.webp" alt="My Photo">
+                <h3 class="name">Newtown City<br>Chamber of Commerce</h3>
+        </header>
+        <nav class="navigation">
+            <button id="menu-button"></button>
+            <div class="nav-container">
+                <a href="https://stephanie8726.github.io/wdd230/index.html" target="_blank">Home</a>
+                <a href="https://stephanie8726.github.io/wdd230/chamber/discover.html" target="_blank">Discover</a>
+                <a href="#">Contact</a>
+                <a href="#">Login</a>
+            </div>
+        </nav>
+    </div>
+
+
+    <main>
+        <fieldset>
+            <legend>Build Form</legend>
+
+            <form method="get" action="record.html" class="form">
+
+                <label for="username">Username*</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password*</label>
+                <input type="password" id="password" name="password" pattern="^[a-zA-Z0-9]{8,}$" required
+                    title="Password must be at least 8 characters long and can only contain alphanumeric characters">
+
+                <label for="confirm_password">Confirm Password*</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your byui email address"
+                    title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required>
+                <input type="submit" id="submitBtn" style="display: none;">
+
+                <label for="r">INPUT: range, min, max, datalist, required</label>
+                <div id="rangevalue">0</div>
+                <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+
+                <button type="submit">Submit</button>
+        </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p><span id="copyright"></span><br>🌻 Stephanie Dacullo Selanoba 🌻<br>Philippines 🇵🇭</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>
