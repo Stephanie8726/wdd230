@@ -139,7 +139,7 @@ fieldset input[type="range"] {
   width: calc(100% - 30px); 
 }
 
-fieldset button[type="submit"] {
+input[type="submit"] {
   width: 100%;
   max-width: 780px;
   padding: 10px;
@@ -152,7 +152,7 @@ fieldset button[type="submit"] {
   font-weight: bold;
 }
 
-fieldset button[type="submit"]:hover {
+input[type="submit"]:hover {
   background-color:  green;
   max-width: 780px;
 }
