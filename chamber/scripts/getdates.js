@@ -73,6 +73,7 @@ const today = new Date();
 const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 todayDisplay.textContent = today.toLocaleDateString('en-US', options);
 
+
 // document.addEventListener("DOMContentLoaded", function() {
 //     const todayDisplay = document.querySelector(".today");
 //     const visitsDisplay = document.querySelector(".visits");
@@ -107,7 +108,6 @@ todayDisplay.textContent = today.toLocaleDateString('en-US', options);
 //     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 //     todayDisplay.textContent = today.toLocaleDateString('en-US', options);
 // });
-
 
 
 });

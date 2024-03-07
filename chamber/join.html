@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephanie Dacullo Selanoba - WDD 230 - Web Frontend Development / Membership Application Form</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development / Stephanie Dacullo Selanoba / Membership Application Form">
+    <meta name="author" content="Stephanie Dacullo Selanoba">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700%7CLora:400,700&display=swap">
+    <meta property="og:title"
+        content="Stephanie Dacullo Selanoba - WDD 230 - Web Frontend Development / Membership Application Form">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://photos.google.com/photo/AF1QipMHDSIn5BQ0nUMwlhWk2CrSa86ekmRkpW9z0VUP">
+    <meta property="og:url" content="https://stephanie8726.github.io/wdd230/index.html">
+</head>
+
+<body>
+    <div class="header-and-nav">
+        <header>
+            <img src="images/hero-image.webp" alt="Hero Image">
+            <h3 class="name">Newtown City<br>Chamber of Commerce</h3>
+        </header>
+        <nav class="navigation">
+            <button id="menu-button"></button>
+            <div class="nav-container">
+                <a href="https://stephanie8726.github.io/wdd230/index.html" target="_blank">Home</a>
+                <a href="https://stephanie8726.github.io/wdd230/chamber/discover.html" target="_blank">Discover</a>
+                <a href="#">Contact</a>
+                <a href="#">Login</a>
+            </div>
+        </nav>
+    </div>
+
+    <main class="join">
+        <div class="joinInfo">
+            <h1>Newtown City Chamber of Commerce Join Membership</h1>
+            <form method="get" action="thanks.html" class="form">
+
+                <fieldset>
+                    <legend><b>Membership Application Form</b></legend>
+                    <label>
+                        First Name* <input type="text" id="firstName" name="fname" required>
+                    </label>
+                    <label>
+                        Last Name* <input type="text" id="lastName" name="lname" required>
+                    </label>
+                    <label>
+                        Title/Position* <input type="text" id="title" name="title" required
+                            pattern="[a-zA-Z\s\-]{7,}"
+                            title="Must contain at least 7 characters and only alphabets, spaces, and hyphens">
+                    </label>
+                    <label>
+                        Email* <input type="email" id="email" name="email" required
+                            placeholder="Your email address">
+                    </label>
+                    <label for="phone">
+                        Mobile Phone* <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,12}"
+                            title="Please enter a valid phone number (10-12 digits)">
+                    </label>
+                    <label for="organization">
+                        Organization Name* <input type="text" id="organization" name="organization" required
+                            placeholder="Enter your organization name">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend><b>Membership Category</b></legend>
+                    <div>Membership Level</div>
+                    <label> <input type="checkbox" name="editing" value="yes"> Non-profit Membership</label>
+                    <label> <input type="checkbox" name="code" value="yes"> Bronze Membership</label>
+                    <label> <input type="checkbox" name="process" value="yes"> Silver Membership</label>
+                    <label> <input type="checkbox" name="client" value="yes"> Gold Membership</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend><b>Business Information</b></legend>
+                    <label for="description">Organization Description</label>
+                    <textarea id="description" name="description" rows="4" cols="50"
+                        placeholder="Enter organization description here"></textarea>
+
+                    <input type="hidden" name="formLoadDateTime" id="formLoadDateTime">
+                </fieldset>
+
+                <fieldset class="membershipBenefits">
+                    <legend><b>Membership Level Benefits</b></legend>
+                    <div class="membershipLevel">
+                        <h4>Bronze Membership</h4>
+                        <ul>
+                            <li>$100</li>
+                            <li>Access to monthly networking events</li>
+                            <li>10% discount on Chamber-sponsored workshops</li>
+                        </ul>
+                    </div>
+                    <div class="membershipLevel">
+                        <h4>Silver Membership</h4>
+                        <ul>
+                            <li>$250</li>
+                            <li>Priority registration for Chamber events</li>
+                            <li>Featured spotlight on the Chamber's website</li>
+                        </ul>
+                    </div>
+                    <div class="membershipLevel">
+                        <h4>Gold Membership</h4>
+                        <ul>
+                            <li>$350</li>
+                            <li>Exclusive access to VIP events</li>
+                            <li>Complimentary advertising in Chamber newsletters</li>
+                        </ul>
+                    </div>
+                </fieldset>
+
+                <input type="submit" value="Business Proposal">
+            </form>
+
+        </div>
+    </main>
+
+    <footer>
+        <p><span id="copyright"></span><br>🌻 Stephanie Dacullo Selanoba 🌻<br>Philippines 🇵🇭</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/join.js"></script>
+</body>
+
+</html>
