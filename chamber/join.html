@@ -5,16 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stephanie Dacullo Selanoba - WDD 230 - Web Frontend Development / Join Membership Form</title>
-    <meta name="description"
-        content="WDD 230 - Web Frontend Development / Stephanie Dacullo Selanoba / Join Membership Form">
+    <meta name="description" content="WDD 230 - Web Frontend Development / Stephanie Dacullo Selanoba / Join Membership Form">
     <meta name="author" content="Stephanie Dacullo Selanoba">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700%7CLora:400,700&display=swap">
-    <meta property="og:title"
-        content="Stephanie Dacullo Selanoba - WDD 230 - Web Frontend Development / Membership Application Form">
+    <meta property="og:title" content="Stephanie Dacullo Selanoba - WDD 230 - Web Frontend Development / Membership Application Form">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://photos.google.com/photo/AF1QipMHDSIn5BQ0nUMwlhWk2CrSa86ekmRkpW9z0VUP">
     <meta property="og:url" content="https://stephanie8726.github.io/wdd230/index.html">
@@ -40,51 +38,31 @@
     <main class="join">
         <div class="joinInfo">
             <h1>Newtown City Chamber of Commerce Join Membership</h1>
-            <form method="get" action="thankyou.html" class="form"></form>
+            <form method="get" action="thankyou.html" class="form">
 
                 <fieldset>
                     <legend><b>Membership Application Form</b></legend>
-                    <label>
-                        First Name* <input type="text" id="firstName" name="fname" required>
-                    </label>
-                    <label>
-                        Last Name* <input type="text" id="lastName" name="lname" required>
-                    </label>
-                    <label>
-                        Title/Position* <input type="text" id="title" name="title" required
-                            pattern="[a-zA-Z\s\-]{7,}"
-                            title="Must contain at least 7 characters and only alphabets, spaces, and hyphens">
-                    </label>
-                    <label>
-                        Email* <input type="email" id="email" name="email" required
-                            placeholder="Your email address">
-                    </label>
-                    <label for="phone">
-                        Mobile Phone* <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,12}"
-                            title="Please enter a valid phone number (10-12 digits)">
-                    </label>
-                    <label for="organization">
-                        Organization Name* <input type="text" id="organization" name="organization" required
-                            placeholder="Enter your organization name">
-                    </label>
+                    <label for="firstName">First Name* <input type="text" id="firstName" name="fname" required></label>
+                    <label for="lastName">Last Name* <input type="text" id="lastName" name="lname" required></label>
+                    <label for="title">Title/Position* <input type="text" id="title" name="title" required pattern="[a-zA-Z\s\-]{7,}" title="Must contain at least 7 characters and only alphabets, spaces, and hyphens"></label>
+                    <label for="email">Email* <input type="email" id="email" name="email" required placeholder="Your email address"></label>
+                    <label for="phone">Mobile Phone* <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,12}" title="Please enter a valid phone number (10-12 digits)"></label>
+                    <label for="organization">Organization Name* <input type="text" id="organization" name="organization" required placeholder="Enter your organization name"></label>
                 </fieldset>
 
                 <fieldset>
                     <legend><b>Membership Category</b></legend>
                     <div>Membership Level</div>
-                    <label> <input type="checkbox" name="editing" value="yes"> Non-profit Membership</label>
-                    <label> <input type="checkbox" name="code" value="yes"> Bronze Membership</label>
-                    <label> <input type="checkbox" name="process" value="yes"> Silver Membership</label>
-                    <label> <input type="checkbox" name="client" value="yes"> Gold Membership</label>
+                    <label><input type="checkbox" name="editing" value="yes"> Non-profit Membership</label>
+                    <label><input type="checkbox" name="code" value="yes"> Bronze Membership</label>
+                    <label><input type="checkbox" name="process" value="yes"> Silver Membership</label>
+                    <label><input type="checkbox" name="client" value="yes"> Gold Membership</label>
                 </fieldset>
 
                 <fieldset>
                     <legend><b>Business Information</b></legend>
                     <label for="description">Organization Description</label>
-                    <textarea id="description" name="description" rows="4" cols="50"
-                        placeholder="Enter organization description here"></textarea>
-
-                    <input type="hidden" name="formLoadDateTime" id="formLoadDateTime">
+                    <textarea id="description" name="description" rows="4" cols="50" placeholder="Enter organization description here"></textarea>
                 </fieldset>
 
                 <fieldset class="membershipBenefits">
@@ -115,6 +93,7 @@
                     </div>
                 </fieldset>
 
+                <input type="hidden" name="formLoadDateTime" id="formLoadDateTime">
                 <input type="submit" value="Business Proposal">
             </form>
 
