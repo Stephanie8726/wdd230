@@ -1,0 +1,117 @@
+{
+    "lessons": [
+      {
+        "lesson": "01",
+        "links": [
+          {
+            "url": "lesson01/holygrail.html",
+            "title": "Holy Layout"
+          }
+        ]
+      },
+      {
+        "lesson": "02",
+        "links": [
+          {
+            "url": "lesson02/design.html",
+            "title": "JS Pen"
+          },
+          {
+            "url": "lesson02/media-query.html",
+            "title": "Media Queries"
+          },
+          {
+            "url": "lesson02/design-principles.html",
+            "title": "Design Principles Document"
+          },
+          {
+            "url": "lesson02/images/css-combinator.png",
+            "title": "CSS Combinator Exercise"
+          }
+        ]
+      },
+      {
+        "lesson": "03",
+        "links": [
+          {
+            "url": "lesson03/chamber-site-plan.html",
+            "title": "Mactan Newtown Chamber of Commerce"
+          },
+          {
+            "url": "lesson03/images/landscape.webp",
+            "title": "Webp"
+          },
+          {
+            "url": "lesson03/lazyload.html",
+            "title": "Lazy Loading"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "url": "https://codepen.io/Stephanie-Dacullo/pen/rNRGVQM?editors=0100",
+            "title": "CSS Pseudo Elements"
+          },
+          {
+            "url": "https://codepen.io/Stephanie-Dacullo/pen/GReMovN",
+            "title": "Responsive Navigation"
+          },
+          {
+            "url": "https://codepen.io/Stephanie-Dacullo/pen/MWxQwZx?editors=0100",
+            "title": "Pseudo-class"
+          }
+        ]
+      },
+      {
+        "lesson": "05",
+        "links": [
+          {
+            "url": "lesson05/bom.html",
+            "title": "Book of Mormon - Top 10"
+          },
+          {
+            "url": "responsive-images.html",
+            "title": "Responsive Image"
+          }
+        ]
+      },
+      {
+        "lesson": "07",
+        "links": [
+          {
+            "url": "lesson07/local-storage.html",
+            "title": "Local Storage"
+          }
+        ]
+      },
+      {
+        "lesson": "09",
+        "links": [
+          {
+            "url": "https://stephanie8726.github.io/wdd230/form.html",
+            "title": "Form"
+          },
+          {
+            "url": "lesson09/new-ward-members.json",
+            "title": "New Ward Members JSON File"
+          },
+          {
+            "url": "lesson09/prophets.html",
+            "title": "Latter-day Prophets"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "url": "#",
+            "title": ""
+          }
+        ]
+      }
+    ]
+  }
+  
+  
+    
