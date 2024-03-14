@@ -1,0 +1,86 @@
+{
+    "companies": [
+      {
+        "name": "Accenture",
+        "address": "Filinvest Towers, Cebu I.T. Park, W Geonzon St, IT Park Cebu City, Philippines",
+        "phone": "+639684554120",
+        "website": "https://www.accenture.com/ph-en",
+        "membership_level": "Gold",
+        "imageurl": "https://images.moneycontrol.com/static-mcnews/2017/03/accenture_720-770x433.jpg?impolicy=website&width=770&height=431",
+        "other_information": "This is the leading BPO Company in the country that provides unmatched services in strategy, consulting, digital, technology and operations."
+      },
+      {
+        "name": "San Miguel",
+        "address": "Cor V.Albano, Tipolo, Mandaue City, 6014 Cebu City, Philippines",
+        "phone": "+639684554121",
+        "membership_level": "Gold",
+        "website": "https://www.sanmiguel.com.ph/",
+        "imageurl": "https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fcms-image-bucket-production-ap-northeast-1-a7d2.s3.ap-northeast-1.amazonaws.com%2Fimages%2F5%2F7%2F1%2F1%2F1951175-7-eng-GB%2F20170206_San-Miguel-logo-2-thm.jpg?width=700&fit=cover&gravity=faces&dpr=2&quality=medium&source=nar-cms",
+        "other_information": "San Miguel Corporation, abbreviated as SMC, is one of the largest and most diversified conglomerates in the Philippines."
+      },
+      {
+        "name": "Alorica",
+        "address": "8WJ5+J5J, Apas, Cebu City, 6000, Philippines",
+        "phone": "+639684554122",
+        "website": "https://www.alorica.com/",
+        "imageurl": "https://media.philstar.com/photos/2022/05/13/allorica-office_2022-05-13_14-02-13.jpg",
+        "membership_level": "Gold",
+        "other_information": "AboitizPower is a power company in the Philippines that champions the use of both renewable and non-renewable energy sources."
+      },
+      {
+        "name": "BDO Unibank",
+        "address": "U.N. Ave, Mandaue City, Philippines",
+        "phone": "+639684554123",
+        "website": "https://www.bdo.com.ph/personal",
+        "imageurl": "https://www.acesawards.com/wp-content/uploads/2019/12/8-768x669.jpg",
+        "membership_level": "Silver",
+        "other_information": "BDO Unibank, Inc., commonly known as Banco de Oro, is a Philippine banking company based in Mandaluyong."
+      },
+      {
+        "name": "Globe",
+        "address": "4334 Baluyong Street Mandaue City, Cebu City, Philippines",
+        "phone": "+639684554124",
+        "website": "https://www.globe.com.ph/",
+        "imageurl": "https://www.rappler.com/tachyon/r3-assets/612F469A6EA84F6BAE882D2B94A4B421/img/88FBA508FD3543859DA41CA6DCF874EC/globe-telecom-holding-company-20150616.jpg?resize=640%2C360&zoom=1",
+        "membership_level": "Silver",
+        "other_information": "Globe Telecom, Inc., commonly shortened as Globe, is a major provider of telecommunications services in the Philippines. The company operates the largest mobile network in the Philippines and one of the largest fixed-line and broadband networks"
+      },
+      {
+        "name": "Uniliver",
+        "address": "6014 B.Suico, Mandaue City, Cebu, Philippines",
+        "phone": "+639684554125",
+        "website": "https://www.unilever.com.ph/",
+        "imageurl": "https://www.rappler.com/tachyon/r3-assets/612F469A6EA84F6BAE882D2B94A4B421/img/91074878358F4362B099C96EAC28C5D4/11-17-2014-unilever_91074878358F4362B099C96EAC28C5D4.jpg?resize=740%2C416&zoom=1",
+        "membership_level": "Silver",
+        "other_information": "At Unilever we meet everyday needs for nutrition, hygiene and personal care with brands that help people feel good, look good and get more out of life."
+      },
+      {
+        "name": "DMCI Homes",
+        "address": "6018 C.Tuico, Mandaue City, Cebu, Philippines",
+        "phone": "+639684554125",
+        "website": "https://www.unilever.com.ph/",
+        "imageurl": "https://dcibuilders.com/wp/wp-content/uploads/2015/12/cream-court-residential-1-2.jpg",
+        "membership_level": "Bronze",
+        "other_information": "The hallmark of a graceful lifestyle in Taguig City · dmci-homes-named-top-taxpayer-by-paranaque-city- · dmci-homes-delivers-third-building-of-satori-residences."
+      },
+      {
+        "name": "Teleperformance",
+        "address": "I. Villa St, Apas, Cebu City, 6000, Cebu, Philippines",
+        "phone": "+639684554126",
+        "website": "https://www.teleperformance.com/",
+        "imageurl": "https://news.outsourceaccelerator.com/wp-content/uploads/2018/09/Teleperformance-opens-19th-site-in-the-Philippines-1024x465.jpg",
+        "membership_level": "Bronze",
+        "other_information": "The hallmark of a graceful lifestyle in Taguig City · dmci-homes-named-top-taxpayer-by-paranaque-city- · dmci-homes-delivers-third-building-of-satori-residences."
+      },
+      {
+        "name": "Waterfront Hotel",
+        "address": "Salinas Dr, Cebu City, 6000 Cebu, Philippines",
+        "phone": "+639684554127",
+        "website": "https://www.waterfronthotels.com.ph/",
+        "imageurl": "https://dhdnzx78tqry5.cloudfront.net/uploads/deal/thumb/376679aa5f9e79c079b6a7c380818938211bd3d2.jpg",
+        "membership_level": "Bronze",
+        "other_information": "The hallmark of a graceful lifestyle in Taguig City · dmci-homes-named-top-taxpayer-by-paranaque-city- · dmci-homes-delivers-third-building-of-satori-residences."
+      }
+    ]
+  }
+  
