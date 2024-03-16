@@ -1,27 +1,35 @@
-// Define the latitude and longitude coordinates of Trier, Germany
-const latitude = 49.75; // Rounded to two decimal places
-const longitude = 6.64; // Rounded to two decimal places
+const latitude = 49.75;
+const longitude = 6.64;
+const apiKey = '7c897c6dc257cb8636ea479ba190b2ba';
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
 
-// Construct the URL for the OpenWeatherMap API
-const apiKey = '9f09a5eccc0510d7c21cbba3d3d1c791'; // Replace 'your_api_key_here' with your actual API key
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
 
-// Define the asynchronous function to fetch weather data from the API
 async function apiFetch() {
   try {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-      console.log(data); // Output the fetched data to the console for testing
-      displayResults(data); // Call the displayResults function to display the weather data
+      console.log(data);
+      displayResults(data);
     } else {
-      throw Error(await response.text());
+      throw new Error('Failed to fetch data');
     }
   } catch (error) {
     console.log(error);
   }
 }
 
-// Call the apiFetch function to initiate the API request
 apiFetch();
+
+function displayResults(data) {
+  currentTemp.innerHTML = `${data.main.temp}&deg;C`;
+  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  let desc = data.weather[0].description;
+  weatherIcon.setAttribute('src', iconsrc);
+  weatherIcon.setAttribute('alt', desc);
+  captionDesc.textContent = desc.charAt(0).toUpperCase() + desc.slice(1);
+}
 

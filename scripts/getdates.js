@@ -30,8 +30,39 @@ if (numVisits !== 0) {
 }
 
 numVisits++;
-
 localStorage.setItem("numVisits-ls", numVisits);
 
 
+// for weather update
+const apiKey = '9f09a5eccc0510d7c21cbba3d3d1c791';
+const city = 'Cebu';
+
+// API URL
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+// Fetch data from OpenWeatherMap API
+fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+        // weather information
+        const temperature = data.main.temp;
+        const description = data.weather[0].description;
+        const iconCode = data.weather[0].icon;
+
+        // weather information html update
+        document.getElementById('temperature').textContent = `${temperature}°C`; // Display temperature without prefix
+        document.getElementById('description').textContent = description; // Display description without prefix
+
+        // weather icon url
+        const iconUrl = `https://openweathermap.org/img/w/${iconCode}.png`;
+        // weather icon img
+        const iconImg = document.createElement('img');
+        iconImg.src = iconUrl;
+        iconImg.alt = 'Weather Icon';
+        // Append icon to the div icon
+        document.getElementById('icon').appendChild(iconImg);
+    })
+    .catch(error => {
+        console.error('Error fetching weather data:', error);
+    });
 });

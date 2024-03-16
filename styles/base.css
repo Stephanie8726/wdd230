@@ -192,6 +192,26 @@ footer p {
   margin-bottom: 1px;
 }
 
+
+#weather-info {
+  text-align: center;
+}
+
+#icon img {
+  width: 100px;
+  margin-top: -20px;
+  margin-bottom: -40px;
+}
+
+.temperature,
+#description {
+  margin-top: 10px;
+}
+
+.label {
+  font-weight: bold;
+}
+
 @media (max-width: 600px) {
   main {
     padding: 10px;
