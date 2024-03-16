@@ -1,0 +1,31 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    border-style: double;
+    margin-top: 200px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 4px 8px 16px burlywood;
+  }
+  
+  main {
+    text-align: center;
+    background-color: rgb(202, 240, 227);
+    border-radius: 20px;
+  }
+  
+  #current-temp {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 2px 4px 8px burlywood;
+  }
+  
+

@@ -10,24 +10,37 @@
 
 
 header {
-  background-color: #14455d;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  padding: 0.5rem;
-  text-align: center;
-  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: #297398;
+  color: #fff;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px;
 }
-  
 
+/* For the profile img and name */
 header img {
   border-radius: 9%;
   width: 85px;
   height: 85px;
   object-fit: cover;
+  margin-left: auto;
 }
+
 
 header h3 {
   color: #fff;
+  font-size: 20px;
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+h1 {
+  color: #fff;
+}
+
+header h1 {
   font-size: 20px;
   margin-right: auto;
   margin-left: 20px;
@@ -52,6 +65,14 @@ header h3 {
   content: "❎";
 }
 
+.navigation {
+  background-color: #14455d;
+  display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
 .navigation.open a {
   display: flex;
 }
@@ -60,16 +81,7 @@ header h3 {
   display: block;
 }
 
-.header-and-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #14455d;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
+/* For navigation links */
 .navigation a {
   color: #fff;
   text-decoration: none;
@@ -87,10 +99,8 @@ header h3 {
 
 footer {
   background-color: #14455d;
-  border-radius: 20px;
   padding: 1rem;
   font-family: "helvetica", serif;
-  box-shadow: 0px -4px 6px #065685;
   color: #fff;
   font-size: 0.6rem;
   margin-bottom: 1rem;

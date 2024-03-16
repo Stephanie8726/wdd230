@@ -4,32 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stephanie Dacullo Selanoba - WDD 230 - Web Frontend Development / Form Build</title>
+    <title>Stephanie Dacullo Selanoba - WDD 230 - Web Frontend Development | Form Build</title>
     <meta name="description" content="WDD 230 - Web Frontend Development / Stephanie Dacullo Selanoba / Form Build">
     <meta name="author" content="Stephanie Dacullo Selanoba">
     <link rel="stylesheet" href="styles/form.css">
-    <meta property="og:title" content="Stephanie Dacullo Selanoba - WDD 230 - Web Frontend Development / Form Application">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title"
+        content="Stephanie Dacullo Selanoba - WDD 230 - Web Frontend Development | Form Application">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://photos.google.com/photo/AF1QipMHDSIn5BQ0nUMwlhWk2CrSa86ekmRkpW9z0VUP">
     <meta property="og:url" content="https://stephanie8726.github.io/wdd230/index.html">
+
 </head>
 
 <body>
-    <div class="header-and-nav">
-        <header>
-            <img src="images/photo.webp" alt="My Photo">
-            <h3 class="name">Newtown City<br>Chamber of Commerce</h3>
-        </header>
-        <nav class="navigation">
-            <button id="menu-button"></button>
-            <div class="nav-container">
-                <a href="https://stephanie8726.github.io/wdd230/index.html" target="_blank">Home</a>
-                <a href="https://stephanie8726.github.io/wdd230/chamber/discover.html" target="_blank">Discover</a>
-                <a href="#">Contact</a>
-                <a href="#">Login</a>
-            </div>
-        </nav>
-    </div>
+
+    <header>
+        <img src="images/photo.webp" alt="My Photo">
+        <h1 class="name">Stephanie Dacullo Selanoba</h1>
+    </header>
+
+    <nav class="navigation">
+        <button id="menu-button"></button>
+        <a href="https://stephanie8726.github.io/wdd230/chamber/index.html" target="_blank">Chamber</a>
+        <a href="lesson03/chamber-site-plan.html" target="_blank">Site Plan</a>
+        <a href="https://www.byui.edu/" target="_blank">Byu-Idaho</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng"
+            target="_blank">Scripture</a>
+        <a href="https://stephanie8726.github.io/wdd230/form.html" target="_blank">Form</a>
+    </nav>
 
     <main>
         <fieldset>
@@ -41,7 +44,8 @@
                 <input type="password" id="password" name="password" pattern="^[a-zA-Z0-9]{8,}$" required
                     title="Password must be at least 8 characters long and can only contain alphanumeric characters">
                 <label for="confirm_password">Confirm Password*</label>
-                <input type="password" id="confirm_password" name="confirm_password" required>
+                <input type="password" id="confirm_password" name="confirm_password" title="Password must match"
+                    pattern="^[a-zA-Z0-9]{8,}$" required>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Your byui email address"
                     title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required>
