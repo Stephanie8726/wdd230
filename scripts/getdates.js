@@ -50,8 +50,8 @@ fetch(apiUrl)
         const iconCode = data.weather[0].icon;
 
         // weather information html update
-        document.getElementById('temperature').textContent = `${temperature}°C`; // Display temperature without prefix
-        document.getElementById('description').textContent = description; // Display description without prefix
+        document.getElementById('temperature').textContent = `${temperature}°C`;
+        document.getElementById('description').textContent = description;
 
         // weather icon url
         const iconUrl = `https://openweathermap.org/img/w/${iconCode}.png`;

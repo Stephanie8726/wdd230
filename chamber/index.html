@@ -69,19 +69,24 @@
                         href="https://www.youtube.com/watch?v=jlrTJeTBsbQ" target="_blank">more info</a></p>
             </div>
 
-            <div class="weather-card">
-                <h2 id="weatherName">Weather Update</h2>
-                <img id="weatherIcon" src="https://openweathermap.org/img/w/01n.png" alt="Sky is Blue">
-                <div class="temperature">
-                    <p><span id="tempDegrees">100.68</span>°C</p>
-                    <p id="tempName">Clouds</p>
+            <section class="weather-card">
+                <div id="weather-info">
+                  <h2>Information</h2>
+                  <div id="icon"></div>
+                  <div class="temperature" id="temperature"></div>
+                  <div id="description"></div>
                 </div>
 
-                <div class="windchill">
+                <div id="meetAndGreetBanner" class="banner" style="display: none;">
+                    <p>Join us for the Chamber of Commerce Meet and Greet event on Wednesday at 7:00 p.m.! 🎉</p>
+                    <button id="closeBannerButton" class="close-button">Close</button>
+                </div>
+                
+                <!-- <div class="windchill">
                     <p id="windSpeed">Gentle Breeze: 1.01 km/h</p>
                     <p id="feelsLike">Feels Like: 144.18°C</p>
                     <p id="windChill">Wind Chill: N/A</p>
-                </div>
+                </div> -->
 
                 <div id="weatherPlaceholder"></div>
 

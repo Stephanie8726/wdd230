@@ -19,95 +19,80 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Function to toggle dark mode
-const modeButton = document.querySelector("#mode");
-const main = document.querySelector("main");
+  const modeButton = document.querySelector("#mode");
+  const main = document.querySelector("main");
 
-modeButton.addEventListener("click", () => {
-	if (modeButton.textContent.includes("🕶️")) {
-		main.style.background = "#000";
-		main.style.color = "#fff";
-		modeButton.textContent = "🔆";
-	} else {
-		main.style.background = "#eee";
-		main.style.color = "#000";
-		modeButton.textContent = "🕶️";
-	}
-});
+  modeButton.addEventListener("click", () => {
+      if (modeButton.textContent.includes("🕶️")) {
+          main.style.background = "#000";
+          main.style.color = "#fff";
+          modeButton.textContent = "🔆";
+      } else {
+          main.style.background = "#eee";
+          main.style.color = "#000";
+          modeButton.textContent = "🕶️";
+      }
+  });
 
-  // Get weather update and update placeholder
-  function getWeatherUpdate() {
-    return fetch(`https://api.openweathermap.org/data/2.5/weather?q=Cebu&units=metric&appid=9f09a5eccc0510d7c21cbba3d3d1c791`)
-        .then(response => response.json())
-        .then(data => {
-            return `Weather update: ${data.weather[0].description}`;
-        })
-        .catch(error => {
-            console.error('Error fetching weather data:', error);
-            return 'Weather data not available';
-        });
+  function toggleBannerVisibility() {
+    const currentDate = new Date();
+    const currentDay = currentDate.getDay(); // 0 for Sunday, 1 for Monday, ..., 6 for Saturday
+    const banner = document.getElementById('meetAndGreetBanner');
+    if (currentDay >= 1 && currentDay <= 3) {
+        banner.style.display = 'block';
+    } else {
+        banner.style.display = 'none';
+    }
 }
 
-// getWeatherUpdate().then(weatherUpdate => {
-//   const weatherNameElement = document.getElementById("weatherName");
-//   weatherNameElement.textContent = weatherUpdate;
-// });
+document.addEventListener("DOMContentLoaded", function () {
+  // Function to close the banner
+  document.getElementById('closeBannerButton').addEventListener('click', function () {
+      document.getElementById('meetAndGreetBanner').style.display = 'none';
+  });
 
+  // Fetch current weather data for a specific location
+  const lat = 10.31;
+  const lon = 123.91;
+  const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY';
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
 
-// date and number of visits
-const todayDisplay = document.querySelector(".today");
-const visitsDisplay = document.querySelector(".visits");
+  fetch(apiUrl)
+      .then(response => {
+          if (!response.ok) {
+              throw new Error('Failed to fetch weather data');
+          }
+          return response.json();
+      })
+      .then(data => {
+          // Display current weather information
+          const currentTemperatureElement = document.getElementById('current-temperature');
+          const currentWeatherDescriptionElement = document.getElementById('current-weather-description');
+          const temperature = data.main.temp;
+          const description = data.weather[0].description;
 
-let numVisits = Number(window.localStorage.getItem("visits-list"));
+          currentTemperatureElement.textContent = `Current Temperature: ${temperature}°C`;
+          currentWeatherDescriptionElement.textContent = `Weather Description: ${description}`;
 
-if (numVisits !== 0) {
-    visitsDisplay.textContent = numVisits;
-} else {
-    visitsDisplay.textContent = `This is your first visit!`;
-}
+          // Toggle banner visibility based on day
+          toggleBannerVisibility();
+      })
+      .catch(error => {
+          console.error('Error fetching weather data:', error);
+      });
 
-numVisits++;
-
-localStorage.setItem("visits-list", numVisits);
-
-const today = new Date();
-const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-todayDisplay.textContent = today.toLocaleDateString('en-US', options);
-
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     const todayDisplay = document.querySelector(".today");
-//     const visitsDisplay = document.querySelector(".visits");
-//     const sidebarContent = document.getElementById("sidebar-content");
-
-//     let numVisits = Number(window.localStorage.getItem("visits-list"));
-//     const lastVisitTime = window.localStorage.getItem("last-visit-time");
-
-//     if (!lastVisitTime) {
-//         sidebarContent.textContent = "Welcome! Let us know if you have any questions.";
-//     } else {
-//         const lastVisitDate = new Date(lastVisitTime);
-//         const currentTime = new Date();
-//         const timeDiff = currentTime.getTime() - lastVisitDate.getTime();
-//         const oneDay = 1000 * 60 * 60 * 24;
-//         const daysDiff = Math.floor(timeDiff / oneDay);
-
-//         if (daysDiff < 1) {
-//             sidebarContent.textContent = "Back so soon! Awesome!";
-//         } else {
-//             sidebarContent.textContent = `You last visited ${daysDiff === 1 ? '1 day' : `${daysDiff} days`} ago.`;
-//         }
-//     }
-
-//     numVisits++;
-//     window.localStorage.setItem("visits-list", numVisits);
-//     window.localStorage.setItem("last-visit-time", new Date().toString());
-
-//     visitsDisplay.textContent = numVisits;
-
-//     const today = new Date();
-//     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-//     todayDisplay.textContent = today.toLocaleDateString('en-US', options);
-// });
-
-
+  // Function to toggle banner visibility based on day
+  function toggleBannerVisibility() {
+      const currentDate = new Date();
+      const currentDay = currentDate.getDay(); // 0 for Sunday, 1 for Monday, ..., 6 for Saturday
+      const banner = document.getElementById('meetAndGreetBanner');
+      if (currentDay >= 1 && currentDay <= 3) {
+          banner.style.display = 'block';
+      } else {
+          banner.style.display = 'none';
+      }
+  }
 });
+});
+
+  
