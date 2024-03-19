@@ -537,9 +537,6 @@ form fieldset {
   border-radius: 2px;
   font-size: 1.2rem;
   margin-bottom: 10px;
-  margin-top: 2px;
-  font-size: 1.2rem;
-  
 }
 
 .days-forecast h4 {
@@ -572,7 +569,6 @@ form fieldset {
 .close-button {
   background-color: #a4efce;
   font-size: 16px;
-  font-size: bold;
   cursor: pointer;
   transition: font-size 0.3s; 
   margin-top: -10px;
