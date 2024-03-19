@@ -523,7 +523,69 @@ form fieldset {
   color: #fff;
 }
 
+.weather-cards .card {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 1px 2px rgb(5, 116, 75);
+}
 
+.current-weather h4 {
+  text-align: center;
+  box-shadow: 1px 2px 1px 2px rgb(5, 116, 75);
+  border-radius: 2px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  font-size: 1.2rem;
+  
+}
+
+.days-forecast h4 {
+  text-align: center;
+  box-shadow: 1px 3px 1px 3px rgb(5, 116, 75);
+  border-radius: 6px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.current-weather {
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 1px 2px rgb(5, 116, 75);
+}
+
+.current-weather p {
+  text-align: center;
+}
+
+.banner {
+  background-color: #e4f4c9;
+  color: #fff; 
+  border-radius: 10px; 
+  text-align: center;
+  margin-top: 10px;
+}
+
+.close-button {
+  background-color: #a4efce;
+  font-size: 16px;
+  font-size: bold;
+  cursor: pointer;
+  transition: font-size 0.3s; 
+  margin-top: -10px;
+}
+
+.close-button:hover {
+  font-size: 18px;
+}
+
+.banner p {
+  font-size: 16px;
+  color: #333;
+}
 
 @media screen and (max-width: 600px) {
  

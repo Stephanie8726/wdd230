@@ -45,54 +45,84 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Function to close the banner
-  document.getElementById('closeBannerButton').addEventListener('click', function () {
-      document.getElementById('meetAndGreetBanner').style.display = 'none';
-  });
 
-  // Fetch current weather data for a specific location
-  const lat = 10.31;
-  const lon = 123.91;
-  const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY';
-  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+// week10 current weather
+const currentWeatherDiv = document.getElementById("current-weather");
+const weatherCardsDiv = document.getElementById("weather-cards");
+const API_KEY = "9f09a5eccc0510d7c21cbba3d3d1c791";
 
-  fetch(apiUrl)
-      .then(response => {
-          if (!response.ok) {
-              throw new Error('Failed to fetch weather data');
-          }
-          return response.json();
-      })
-      .then(data => {
-          // Display current weather information
-          const currentTemperatureElement = document.getElementById('current-temperature');
-          const currentWeatherDescriptionElement = document.getElementById('current-weather-description');
-          const temperature = data.main.temp;
-          const description = data.weather[0].description;
+const createWeatherCard = (weatherItem) => {
+    return `<li class="card">
+                <h3>${weatherItem.date}</h3>
+                <div class="details">
+                    <p>${weatherItem.temp}°C - ${weatherItem.description}</p>
+                    <img src="http://openweathermap.org/img/wn/${weatherItem.icon}.png" alt="Weather Icon">
+                </div>
+            </li>`;
+};
 
-          currentTemperatureElement.textContent = `Current Temperature: ${temperature}°C`;
-          currentWeatherDescriptionElement.textContent = `Weather Description: ${description}`;
+const updateWeatherData = () => {
+    // Get current weather
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=Cebu&appid=${API_KEY}`)
+        .then((response) => response.json())
+        .then((data) => {
+            const currentWeather = {
+                temperature: (data.main.temp - 273.15).toFixed(2),
+                description: data.weather[0].description,
+                icon: data.weather[0].icon
+            };
+            currentWeatherDiv.innerHTML = `
+                <h4>Current Weather</h4>
+                <div class="details">
+                    <p>${currentWeather.temperature}°C - ${currentWeather.description}</p>
+                    <img src="http://openweathermap.org/img/wn/${currentWeather.icon}.png" alt="Weather Icon" tyle="width: 20px; height: 30px;">
+                </div>`;
+        })
+        .catch((error) => console.error("Error fetching current weather:", error));
 
-          // Toggle banner visibility based on day
-          toggleBannerVisibility();
-      })
-      .catch(error => {
-          console.error('Error fetching weather data:', error);
-      });
+    // Get three-day forecast
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Cebu&appid=${API_KEY}`)
+        .then((response) => response.json())
+        .then((data) => {
+            const forecast = data.list.filter((item, index) => index % 8 === 0).slice(0, 3);
+            weatherCardsDiv.innerHTML = forecast.map((item) => {
+                const weatherItem = {
+                    date: item.dt_txt.split(" ")[0],
+                    temp: (item.main.temp - 273.15).toFixed(2),
+                    description: item.weather[0].description,
+                    icon: item.weather[0].icon
+                };
+                return createWeatherCard(weatherItem);
+            }).join("");
+        })
+        .catch((error) => console.error("Error fetching weather forecast:", error));
+};
 
-  // Function to toggle banner visibility based on day
-  function toggleBannerVisibility() {
-      const currentDate = new Date();
-      const currentDay = currentDate.getDay(); // 0 for Sunday, 1 for Monday, ..., 6 for Saturday
-      const banner = document.getElementById('meetAndGreetBanner');
-      if (currentDay >= 1 && currentDay <= 3) {
-          banner.style.display = 'block';
-      } else {
-          banner.style.display = 'none';
-      }
-  }
+updateWeatherData();
+
+const banner = document.getElementById("meetAndGreetBanner");
+const closeButton = document.getElementById("closeBannerButton");
+
+// check if today is Monday, Tuesday, or Wednesday
+const isBannerDay = () => {
+    const today = new Date();
+    const dayOfWeek = today.getDay();
+    return dayOfWeek >= 1 && dayOfWeek <= 3;
+};
+
+// toggle the banner visibility
+const toggleBanner = () => {
+    banner.style.display = isBannerDay() ? "block" : "none";
+};
+
+// Close button event listener
+closeButton.addEventListener("click", () => {
+    banner.style.display = "none";
 });
+
+// Check and display the banner on page load
+window.addEventListener("load", toggleBanner);
+
 });
 
   

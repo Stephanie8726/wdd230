@@ -65,33 +65,34 @@
             <div class="event">
                 <h2>Current Events</h2>
                 <h3>Race for Our Heroes Fun</h3>
-                <p>United in purpose, stronger together! Stay tuned for more exciting events ahead. <a
+                <p>United in purpose, stronger together! Stay tuned for more exciting events ahead.<a
                         href="https://www.youtube.com/watch?v=jlrTJeTBsbQ" target="_blank">more info</a></p>
             </div>
-
-            <section class="weather-card">
-                <div id="weather-info">
-                  <h2>Information</h2>
-                  <div id="icon"></div>
-                  <div class="temperature" id="temperature"></div>
-                  <div id="description"></div>
+            <div class="container">
+                <div class="weather-card">
+                    <h2>Information</h2>
+                    <div class="current-weather" id="current-weather">
+                        <h4>Current Weather</h4>
+                        <div class="details">
+                            <p>Loading...</p>
+                            <p>Temperature: Loading...</p>
+                        </div>
+                    </div>
+                    <div class="days-forecast" id="days-forecast">
+                        <h4>3-Day Weather Forecast</h4>
+                        <div class="weather-cards" id="weather-cards">
+                            <p class="card">Loading...</p>
+                            <p class="card">Loading...</p>
+                            <p class="card">Loading...</p>
+                        </div>
+                        <div id="meetAndGreetBanner" class="banner" style="display: none;">
+                            <p>📢Let's Meet and Greet on Wednesday at 7:00 p.m.🤝</p>
+                            <button id="closeBannerButton" class="close-button">Close</button>
+                        </div>
+                    </div>
                 </div>
-
-                <div id="meetAndGreetBanner" class="banner" style="display: none;">
-                    <p>Join us for the Chamber of Commerce Meet and Greet event on Wednesday at 7:00 p.m.! 🎉</p>
-                    <button id="closeBannerButton" class="close-button">Close</button>
-                </div>
-                
-                <!-- <div class="windchill">
-                    <p id="windSpeed">Gentle Breeze: 1.01 km/h</p>
-                    <p id="feelsLike">Feels Like: 144.18°C</p>
-                    <p id="windChill">Wind Chill: N/A</p>
-                </div> -->
-
-                <div id="weatherPlaceholder"></div>
-
-                  </div>
-                </section>
+            </div>
+        </section>
 
         <section id="company-spotlights" class="company-spotlights">
             <h2>Company Spotlights</h2>
