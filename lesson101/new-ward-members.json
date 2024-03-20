@@ -1,0 +1,45 @@
+{
+    "wardInformation": {
+    "familyName": "Peterson",
+    "moveInDate": "2023-08-01",
+    "numberOfPeople": 7,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Jake Peterson",
+        "gender": "Male",
+        "birthdate": "1986-04-21"
+      },
+      {
+        "name": "May Peterson",
+        "gender": "Female",
+        "birthdate": "1987-17-14"
+      },
+      {
+        "name": "Drake Peterson",
+        "gender": "Male",
+        "birthdate": "2011-04-06"
+      },
+      {
+        "name": "Shane Peterson",
+        "gender": "Female",
+        "birthdate": "2014-07-26"
+      },
+      {
+        "name": "Josh Peterson",
+        "gender": "Male",
+        "birthdate": "2014-05-11"
+      },
+      {
+        "name": "Sophie Peterson",
+        "gender": "Female",
+        "birthdate": "2019-08-18"
+      },
+      {
+        "name": "Elie Peterson",
+        "gender": "Male",
+        "birthdate": "2021-13-06"
+      }
+    ]
+    }
+  }
