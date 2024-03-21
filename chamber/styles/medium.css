@@ -16,4 +16,14 @@
     #menu-button {
         display: none; /* Hide the button for larger screens */
     }
+
+    /* .event img {
+      max-width: 100%;
+      margin-bottom: 10px;
+    } */
+
+    .spotlight3 {
+      left: 0;
+      top: 10px;
+      }
   }
