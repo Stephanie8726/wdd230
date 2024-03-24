@@ -34,9 +34,41 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   });
 
+//   number of visits
+function welcomeMessage(){
+
+    let lastVisit = localStorage.getItem("lastVisit") || Date.now();
+    let currentDate = Date.now();
+    const dayMs = 86400000;
+
+    if (lastVisit == currentDate){
+        localStorage.setItem("lastVisit", currentDate);
+        return "Welcome! Let us know if you have any questions.";
+    }
+    else if ((currentDate - lastVisit) / dayMs < 1 ){
+        localStorage.setItem("lastVisit", currentDate);
+        return "Back so soon! Awesome!";
+    }
+    else{
+        localStorage.setItem("lastVisit", currentDate);
+        return `You last visited ${(lastVisit/dayMs).toFixed(0)} days ago.`;
+    }
+
+}
+
+document.querySelector("#message").innerHTML = welcomeMessage();
+
+    const today = new Date().toLocaleDateString();
+    document.querySelector(".today").textContent = today;
+});
+
+
+
+
+  // week10 current weather
   function toggleBannerVisibility() {
     const currentDate = new Date();
-    const currentDay = currentDate.getDay(); // 0 for Sunday, 1 for Monday, ..., 6 for Saturday
+    const currentDay = currentDate.getDay(); 
     const banner = document.getElementById('meetAndGreetBanner');
     if (currentDay >= 1 && currentDay <= 3) {
         banner.style.display = 'block';
@@ -45,8 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 }
 
-
-// week10 current weather
 const currentWeatherDiv = document.getElementById("current-weather");
 const weatherCardsDiv = document.getElementById("weather-cards");
 const API_KEY = "9f09a5eccc0510d7c21cbba3d3d1c791";
@@ -122,7 +152,5 @@ closeButton.addEventListener("click", () => {
 
 // Check and display the banner on page load
 window.addEventListener("load", toggleBanner);
-
-});
 
   

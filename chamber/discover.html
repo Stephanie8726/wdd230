@@ -27,7 +27,7 @@
     <div class="header-and-nav">
         <header>
             <img src="images/hero-image.webp" alt="Hero Image">
-            <h1 class="name">Discover Newtown City<br>Chamber of Commerce</h1>
+            <h1 class="name">Newtown City<br>Chamber of Commerce</h1>
             <div class="social-links">
                 <a href="https://www.facebook.com"><img src="images/facebook.webp" alt="Facebook"></a>
                 <a href="https://www.linkedin.com"><img src="images/linkedin.webp" alt="LinkedIn"></a>
@@ -36,22 +36,24 @@
         <nav class="navigation">
             <button id="menu-button"></button>
             <div class="nav-container">
-                <a href="https://stephanie8726.github.io/wdd230/chamber/index.html" target="_blank">Home</a>
+                <a href="https://stephanie8726.github.io/wdd230/index.html" target="_blank">Home</a>
                 <a href="https://stephanie8726.github.io/wdd230/chamber/discover.html" target="_blank">Discover</a>
-                <a href="#">Contact</a>
-                <a href="#">Login</a>
+                <a href="https://stephanie8726.github.io/wdd230/chamber/join.html" target="_blank">Join</a>
+                <a href="https://stephanie8726.github.io/wdd230/chamber/directory.html" target="_blank">Directory</a>
             </div>
         </nav>
     </div>
-    <button id="mode">Toggle Dark Mode</button>
+    <button id="mode">Dark Mode</button>
 
     <div class="sidebar">
         <div id="sidebar-content"></div>
     </div>
 
     <main class="discover">
-        <p>Number of visits: <span class="visits"></span></p>
-        <p>Date: <span class="today"></span></p>
+      <!-- <div class="discover-page">Welcome! Let us know if you have any questions.</div> -->
+      <section>
+        <p id="message">Welcome! Let us know if you have any questions.</p>
+      </section>
         <picture>
 
             <source srcset="images/expo.webp" media="(min-width: 600px)">
@@ -115,9 +117,19 @@
 
     </main>
     <footer>
-        <img src="images/hero-image.webp" alt="Hero Image">
-        <p>Newtown Business Chamber<br>Mactan Newtown Lapu-Lapu City, Cebu Philippines 6015</p>
-        <p>📧 newtown@mctan18.org<br>☎️ +6398794561230</p>
+        <div class="footage-beautify">
+            <section> 
+                <h2 id="beau">Newtown Business Chamber of Commerce</h2>
+                <p id="add">
+                    WDD 230 - Stephanie Dacullo Selanoba <br>
+                    Mactan Newtown Lapu-Lapu City, Cebu Philippines 6015
+                </p>
+            </section>
+    
+            <img src="images/hero-image.webp" alt="Hero Image">
+            <p>Contact Us <br> 📧 newtown@mctan18.org<br>☎️ +6398794561230</p>
+        </div>
+    <hr>
         <p id="copyright">Copyright © Your Company</p>
         <p id="lastModified"></p>
     </footer>

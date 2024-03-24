@@ -22,18 +22,24 @@
     <div class="header-and-nav">
         <header>
             <img src="images/hero-image.webp" alt="Hero Image">
-            <h3 class="name">Newtown City<br>Chamber of Commerce</h3>
+            <h1 class="name">Newtown City<br>Chamber of Commerce</h1>
+            <div class="social-links">
+                <a href="https://www.facebook.com"><img src="images/facebook.webp" alt="Facebook"></a>
+                <a href="https://www.linkedin.com"><img src="images/linkedin.webp" alt="LinkedIn"></a>
+            </div>
         </header>
         <nav class="navigation">
             <button id="menu-button"></button>
             <div class="nav-container">
-                <a href="https://stephanie8726.github.io/wdd230/chamber/index.html" target="_blank">Home</a>
+                <a href="https://stephanie8726.github.io/wdd230/index.html" target="_blank">Home</a>
                 <a href="https://stephanie8726.github.io/wdd230/chamber/discover.html" target="_blank">Discover</a>
                 <a href="https://stephanie8726.github.io/wdd230/chamber/join.html" target="_blank">Join</a>
-                <a href="#">Login</a>
+                <a href="https://stephanie8726.github.io/wdd230/chamber/directory.html" target="_blank">Directory</a>
             </div>
         </nav>
     </div>
+
+    <button id="mode">Dark Mode</button>
 
     <main class="join">
         <div class="joinInfo">
@@ -65,33 +71,40 @@
                     <textarea id="description" name="description" rows="4" cols="50" placeholder="Enter organization description here"></textarea>
                 </fieldset>
 
-                <fieldset class="membershipBenefits">
-                    <legend><b>Membership Level Benefits</b></legend>
-                    <div class="membershipLevel">
-                        <h4>Bronze Membership</h4>
-                        <ul>
-                            <li>$100</li>
-                            <li>Access to monthly networking events</li>
-                            <li>10% discount on Chamber-sponsored workshops</li>
-                        </ul>
-                    </div>
-                    <div class="membershipLevel">
-                        <h4>Silver Membership</h4>
-                        <ul>
-                            <li>$250</li>
-                            <li>Priority registration for Chamber events</li>
-                            <li>Featured spotlight on the Chamber's website</li>
-                        </ul>
-                    </div>
-                    <div class="membershipLevel">
-                        <h4>Gold Membership</h4>
-                        <ul>
-                            <li>$350</li>
-                            <li>Exclusive access to VIP events</li>
-                            <li>Complimentary advertising in Chamber newsletters</li>
-                        </ul>
-                    </div>
-                </fieldset>
+                    <table>
+                        <caption>You too can take advantage!</caption>
+                        <thead>
+                            <tr>
+                                <th colspan="4" scope="colgroup">Membership Level Benefits</th>
+                            </tr>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Bronze</th>
+                                <th scope="col">Silver</th>
+                                <th scope="col">Gold</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Priority Registration</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                            </tr>
+                            <tr>
+                                <td>10% Discount on Workshops</td>
+                                <td>❌</td>
+                                <td>✔️</td>
+                                <td>✔️ </td>
+                            </tr>
+                            <tr>
+                                <td>VIP Events Access</td>
+                                <td>❌</td>
+                                <td>❌</td>
+                                <td>✔️ </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                 <input type="hidden" name="formLoadDateTime" id="formLoadDateTime">
                 <input type="submit" value="Business Proposal">
@@ -101,10 +114,15 @@
     </main>
 
     <footer>
-        <p><span id="copyright"></span><br>🌻 Stephanie Dacullo Selanoba 🌻<br>Philippines 🇵🇭</p>
-        <p id="lastModified"></p>
+        <div id="footer-join">
+            <p><span id="copyright"></span><br>🌻 Stephanie Dacullo Selanoba 🌻<br>Philippines 🇵🇭</p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
+
     <script src="scripts/join.js"></script>
+    <script src="scripts/getdates.js"></script>
+    
 </body>
 
 </html>

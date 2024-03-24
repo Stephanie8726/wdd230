@@ -14,8 +14,8 @@ body {
 
 .header-and-nav img {
   padding: 10px;
-  width: 90px;
-  height:90px;
+  width: 110px;
+  height:110px;
 }
 
 .header-and-nav img:hover {
@@ -34,6 +34,7 @@ body {
 .hero img {
   border-radius: 10px;
   box-shadow: 2px 4px 1px rgba(138, 128, 211, 0.5);
+
 }
 
 .hero img:hover {
@@ -118,8 +119,10 @@ header {
 
 header img {
   max-width: 100px;
-  border-radius: 50px;
+  height: auto;
+  border-radius: 20px;
   margin-left: -15px;
+  margin-top: -10px;
 }
 
 header h1.name {
@@ -235,7 +238,7 @@ footer {
   background: radial-gradient(#dba0a0, #7085e4);
   padding: 10px;
   border-radius: 8px;
-  margin-top: -70px;
+  margin-top: -40px;
 }
 
 .footage-beautify {
@@ -372,6 +375,8 @@ color: #156898;
 
 .discover img {
   width: 100%;
+  height: auto;
+  object-fit: cover;
   transition: filter 0.5s;
   border: 1px solid rgb(231, 167, 49);
   transition: transform 0.3s ease-in-out;
@@ -474,6 +479,7 @@ img {
   max-width: 400px;
   margin: -1rem 2% 2rem 2%;
   box-shadow: 1px 1px 4px #999;
+  align-items: center;
 }
 
 .form input[type="submit"]:hover {
@@ -531,6 +537,48 @@ form fieldset {
     margin-top: -15px;
     margin-bottom: 35px;
   }
+
+  /* Join  */
+  #footer-join {
+    text-align: center;
+}
+
+.join table {
+  margin: auto 0;
+  border-collapse: collapse;
+  width: 70%;
+  margin-top: -20px;
+}
+ 
+
+.join caption {
+  padding: 10px;
+  caption-side: bottom;
+  color: Black;
+  font-size: .75rem;
+}
+
+.join th,
+.join td {
+  padding: 12px 15px;
+  border: 1px solid rgb(187, 166, 166);
+  margin-right: 100px;
+}
+
+.join th {
+  background-color: black;
+  font-size: larger;
+  color: white;
+}
+
+.join td {
+  text-align: center;
+  font-weight: bold;
+}
+
+.join tbody tr:nth-child(2){
+  background-color: rgb(215, 204, 204);
+}
 
   /* members-jason/companies */
 .member-card img {
