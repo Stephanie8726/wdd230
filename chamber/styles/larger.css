@@ -87,7 +87,7 @@
 
 #grid,
 #list {
-  background: radial-gradient(#dba0a0, #7085e4); /* Set background color */
+  background: radial-gradient(#dba0a0, #7085e4); 
   color: white;
   border: none;
   padding: 5px;
@@ -101,4 +101,15 @@
 #list:hover {
   background-color: #0056b3;
 }
+
+/* join-table */
+.join table {
+  display: block;
+  margin: auto 0;
+  border-collapse: collapse;
+  width: 50%;
+  margin-top: -230px;
+  margin-left: 500px;
+  margin-right: 10px;
   }
+}

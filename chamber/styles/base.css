@@ -395,36 +395,11 @@ img {
 
 form fieldset {
   margin: 2rem 0;
-  border: 1px solid #ddd;
+  border: none;
   border-radius: 6px;
   padding: .5rem 2%;
-  margin-right: 5px;
+  margin-right: 100px;
 }
-
-.membership-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-.membership-table caption {
-  font-weight: bold;
-  text-align: left;
-}
-
-.membership-table th, .membership-table td {
-  padding: 10px;
-  border: 1px solid #ddd;
-}
-
-.membership-table thead {
-  background-color: #f2f2f2;
-}
-
-.membership-table tbody tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
 
 .form legend {
   padding: 0 .5rem;
@@ -463,6 +438,7 @@ form fieldset {
 }
 
 .form input[type="submit"]{
+  position: sticky;
   border: none;
   background-image: linear-gradient(#9c2c13, #6f200e);
   color: #fff;
@@ -528,14 +504,6 @@ input[type="hidden"] {
   #footer-join {
     text-align: center;
 }
-
-.join table {
-  margin: auto 0;
-  border-collapse: collapse;
-  width: 30%;
-  margin-top: -20px;
-}
- 
 
 .join caption {
   padding: 10px;
@@ -632,7 +600,6 @@ input[type="hidden"] {
 
 #grid:hover,
 #list:hover {
-  background-color: #0056b3; /* Change background color on hover */
   transform: scale(1.1);
 }
 
@@ -865,4 +832,14 @@ input[type="hidden"] {
     text-shadow: 2px 2px 8px rgba(31, 13, 165, 0.5);
     text-align: center;
   }
+
+
+ .join table {
+  margin: auto 0;
+  border-collapse: collapse;
+  width: 20%;
+  margin-top: -20px;
+  margin-right: -700px;
+} 
+  
 }
