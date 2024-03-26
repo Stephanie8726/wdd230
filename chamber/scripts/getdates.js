@@ -23,46 +23,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const main = document.querySelector("main");
 
   modeButton.addEventListener("click", () => {
-      if (modeButton.textContent.includes("🕶️")) {
+      if (modeButton.textContent.includes("☀")) {
           main.style.background = "#000";
           main.style.color = "#fff";
           modeButton.textContent = "🔆";
       } else {
           main.style.background = "#eee";
           main.style.color = "#000";
-          modeButton.textContent = "🕶️";
+          modeButton.textContent = "☀";
       }
   });
 
-//   number of visits
-function welcomeMessage(){
-
-    let lastVisit = localStorage.getItem("lastVisit") || Date.now();
-    let currentDate = Date.now();
-    const dayMs = 86400000;
-
-    if (lastVisit == currentDate){
-        localStorage.setItem("lastVisit", currentDate);
-        return "Welcome! Let us know if you have any questions.";
-    }
-    else if ((currentDate - lastVisit) / dayMs < 1 ){
-        localStorage.setItem("lastVisit", currentDate);
-        return "Back so soon! Awesome!";
-    }
-    else{
-        localStorage.setItem("lastVisit", currentDate);
-        return `You last visited ${(lastVisit/dayMs).toFixed(0)} days ago.`;
-    }
-
-}
-
-document.querySelector("#message").innerHTML = welcomeMessage();
-
-    const today = new Date().toLocaleDateString();
-    document.querySelector(".today").textContent = today;
 });
-
-
 
 
   // week10 current weather
@@ -86,7 +58,7 @@ const createWeatherCard = (weatherItem) => {
                 <h3>${weatherItem.date}</h3>
                 <div class="details">
                     <p>${weatherItem.temp}°C - ${weatherItem.description}</p>
-                    <img src="http://openweathermap.org/img/wn/${weatherItem.icon}.png" alt="Weather Icon">
+                    <img src="https://openweathermap.org/img/wn/${weatherItem.icon}.png" alt="Weather Icon">
                 </div>
             </li>`;
 };

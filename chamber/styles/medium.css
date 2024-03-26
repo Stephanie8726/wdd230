@@ -1,4 +1,4 @@
-@media screen and (min-width: 601px) and (max-width: 900px) {
+@media screen and (min-width:500px) {
     main {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -12,18 +12,89 @@
       background-color:  #5933cb;
       padding: 10px 20px;
     }
-
-    #menu-button {
-        display: none; /* Hide the button for larger screens */
-    }
-
-    /* .event img {
-      max-width: 100%;
-      margin-bottom: 10px;
-    } */
-
+ 
+    .navigation a {
+      display: none;
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+      transition: background-color 0.3s ease;
+      border-radius: 4px;
+    } 
+    
     .spotlight3 {
       left: 0;
       top: 10px;
+      }
+
+      .image-size::after {
+        content: "medium";
+        font-weight: bold;
+        color: #fff;
+        background-color: #28a745;
+        padding: 3px 6px;
+        border-radius: 3px;
+      }
+      
+      .footage-beautify {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .footage-beautify section {
+        flex-grow: 1;
+        margin-right: 20px;
+      }
+      
+      footer img {
+        max-width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+      } 
+
+      footer {
+        background: radial-gradient(#dba0a0, #7085e4);
+        padding: 10px;
+        border-radius: 8px;
+      }
+  
+      footer p {
+        margin: 5px 0;
+        font-size: 14px;
+        color: white;
+        font-family: lora;
+        text-shadow: 2px 2px 8px rgba(31, 13, 165, 0.5);
+      }
+
+      .footage-beautify h3 {
+        text-align: center;
+        color: white;
+        font-family: lora;
+        text-shadow: 2px 2px 8px rgba(31, 13, 165, 0.5);
+        margin-top: -5px;
+      }
+
+      footer img {
+        max-width: 40px;
+        height: 40px;
+        border-radius: 25px;
+        margin-bottom: -15px; 
+      }
+
+      #add {
+        margin: 5px 0;
+        font-size: 14px;
+        color: white;
+        font-family: lora;
+        text-shadow: 2px 2px 8px rgba(31, 13, 165, 0.5);
+        line-height: 1.5;
+      }
+      
+      #copyright,
+      #lastModified {
+        text-align: center;
       }
   }

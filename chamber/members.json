@@ -1,0 +1,16 @@
+{
+    "members": [
+      {
+        "name": "Member 1",
+        "level": "Silver"
+      },
+      {
+        "name": "Member 2",
+        "level": "Gold"
+      },
+      {
+        "name": "Member 3",
+        "level": "Gold"
+      }
+    ]
+  }

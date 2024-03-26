@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stephanie Dacullo Selanoba - WDD 230 - Web Frontend Development / Join Membership</title>
+    <title>Join Newtown City Chamber of Commerce Membership</title>
     <meta name="description" content="WDD 230 - Web Frontend Development / Stephanie Dacullo Selanoba / Join the Newtown City Chamber of Commerce - Apply for Membership Now.">
     <meta name="author" content="Stephanie Dacullo Selanoba">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700%7CLora:400,700&display=swap">
-    <meta property="og:title" content="Stephanie Dacullo Selanoba - WDD 230 - Web Frontend Development / Membership Application Form">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title"
+        content="Stephanie Dacullo Selanoba - WDD 230 - Web Frontend Development / Join Newtown City Chamber of Commerce Membership">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://photos.google.com/photo/AF1QipMHDSIn5BQ0nUMwlhWk2CrSa86ekmRkpW9z0VUP">
-    <meta property="og:url" content="https://stephanie8726.github.io/wdd230/index.html">
-</head>
+    <meta property="og:image"
+        content="https://photos.google.com/search/_tra_/photo/AF1QipMwN71DBEPipuMOtUPHt2OLsQ0On6WMUo5S1vuX">
+    <meta property="og:url" content="https://stephanie8726.github.io/wdd230/chamber/index.html">
 
 <body>
     <div class="header-and-nav">
@@ -24,14 +26,14 @@
             <img src="images/hero-image.webp" alt="Hero Image">
             <h1 class="name">Newtown City<br>Chamber of Commerce</h1>
             <div class="social-links">
-                <a href="https://www.facebook.com"><img src="images/facebook.webp" alt="Facebook"></a>
-                <a href="https://www.linkedin.com"><img src="images/linkedin.webp" alt="LinkedIn"></a>
+                <a href="https://www.facebook.com/stephlaruga101" target="_blank"><img src="images/facebook.webp" alt="Facebook"></a>
+                <a href="https://www.linkedin.com/in/stephaniedaculloselanoba8726/" target="_blank"><img src="images/linkedin.webp" alt="LinkedIn"></a>
             </div>
         </header>
         <nav class="navigation">
             <button id="menu-button"></button>
             <div class="nav-container">
-                <a href="https://stephanie8726.github.io/wdd230/index.html" target="_blank">Home</a>
+                <a href="https://stephanie8726.github.io/wdd230/chamber/index.html" target="_blank">Home</a>
                 <a href="https://stephanie8726.github.io/wdd230/chamber/discover.html" target="_blank">Discover</a>
                 <a href="https://stephanie8726.github.io/wdd230/chamber/join.html" target="_blank">Join</a>
                 <a href="https://stephanie8726.github.io/wdd230/chamber/directory.html" target="_blank">Directory</a>
@@ -39,13 +41,14 @@
         </nav>
     </div>
 
-    <button id="mode">Dark Mode</button>
+    <button id="mode">☀ /🔆</button>
 
     <main class="join">
         <div class="joinInfo">
-            <h1>Newtown City Chamber of Commerce Join Membership</h1>
+            <h2>Newtown City Chamber of Commerce Join Membership</h2>
             <form method="get" action="thankyou.html" class="form">
 
+                <div class="fieldset-container">
                 <fieldset>
                     <legend><b>Membership Application Form</b></legend>
                     <label for="firstName">First Name* <input type="text" id="firstName" name="fname" required></label>
@@ -109,19 +112,32 @@
                 <input type="hidden" name="formLoadDateTime" id="formLoadDateTime">
                 <input type="submit" value="Business Proposal">
             </form>
-
         </div>
+    </div>
+
+    <div class="company-spotlights"></div>
     </main>
 
     <footer>
-        <div id="footer-join">
-            <p><span id="copyright"></span><br>🌻 Stephanie Dacullo Selanoba 🌻<br>Philippines 🇵🇭</p>
-            <p id="lastModified"></p>
+        <div class="footage-beautify">
+            <section> 
+                <h3 id="beau">Newtown Business Chamber of Commerce</h3>
+                <p id="add">
+                    WDD 230 - Stephanie Dacullo Selanoba <br>
+                    Mactan Newtown Lapu-Lapu City, Cebu Philippines 6015
+                </p>
+            </section>
+    
+            <img src="images/hero-image.webp" alt="Hero Image">
+            <p>Contact Us <br> 📧 newtown@mctan18.org<br>☎️ +6398794561230</p>
         </div>
+    <hr>
+        <p id="copyright">Copyright © Your Company</p>
+        <p id="lastModified"></p>
     </footer>
 
     <script src="scripts/join.js"></script>
-    <script src="scripts/getdates.js"></script>
+    <script src="scripts/common-functions.js"></script>
     
 </body>
 
