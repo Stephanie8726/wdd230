@@ -11,7 +11,7 @@ function welcomeMessage(){
     }
     else if ((currentDate - lastVisit) / dayMs < 1 ){
         localStorage.setItem("lastVisit", currentDate);
-        return "Back so soon! Awesome!";
+        return "Back so soon! Awesome!🎉";
     }
     else{
         localStorage.setItem("lastVisit", currentDate);

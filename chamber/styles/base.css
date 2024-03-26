@@ -291,7 +291,7 @@ footer img:hover {
 
 /* Discover page */
 #message {
-  position: ab;
+  position: block;
   border-radius: 8px;
   font-size: 20px;
   margin-top: 5px;
