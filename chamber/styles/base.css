@@ -299,6 +299,12 @@ footer img:hover {
   text-align: center;
 }
 
+section h2 {
+  text-align: center;
+  font-style: italic;
+
+}
+
 .discover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
