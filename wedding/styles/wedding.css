@@ -1,0 +1,492 @@
+:root {
+    --pastel-blue: #aec6cf;
+    --pastel-green: #b7e6a5;
+    --pastel-orange: #ffb347;
+    --pastel-pink: #ffb6c1;
+    --soft-gray: #cccccc;
+    --pastel-dark-nude: #c0a59c;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(#e8d0c8, #e8e2da);
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+  }
+
+  header p {
+    color: tomato;
+    font-size: 14px;
+    font-family: cursive;
+  }
+  
+  img[src='images/wedding1.webp'] {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+  
+  .social-links img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .social-links {
+    position: flex;
+    left: 80px;
+    display: flex;
+    margin-left: 20px;
+  }
+  
+  .social-links a {
+    margin-right: 10px;
+  }
+  
+  .social-links img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    box-shadow: 1px 1px 2px 1px rgba(169, 7, 104, 0.5);
+  }
+  
+  #mode {
+    position: absolute;
+    top: 20px;
+    right: 10rem;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    border: #d97e93;
+  }
+  
+  #mode:hover {
+    transform: scale(1.1);
+  }
+  
+  .cover-info h1 {
+    font-size: 2rem;
+  }
+  
+  .cover-info p, h1 {
+    position: relative;
+    top: -380px;
+    text-align: center;
+    color: #fff;
+}
+  
+  header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-items: center;
+    background-color: radial-gradient(#7b2407, #5d3705);
+    margin: 0;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  header img {
+    width: 0px;
+  }
+  
+  header .navigation {
+    display: flex;
+    text-decoration: none;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  header .navigation a {
+    color: rgb(238, 12, 12);
+    text-decoration: none;
+    font-size: 14px;
+    font-family: lora;
+  }
+  
+  header .navigation a:hover {
+    color: tomato;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  #menu-button {
+    display: none; /* remove in a bigger screen */
+  }
+
+  #menu-button::before {
+    content: "☰";
+    position: absolute;
+    top: 1.1rem;
+    right: 1.5rem;
+    padding:0.3rem;
+    background-color: #909090;
+    border-radius: 2px; 
+  }
+  
+  #menu-button.open::before {
+    content: "❌";
+  }
+
+  #menu-button:hover {
+    background-color: #f2b5a1;
+    border-radius: 2px; 
+  } 
+
+   .explore-button {
+    display: inline-block;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: lora;
+    transition: background-color 0.3s ease;
+  } 
+
+  .explore-button:hover {
+    transform: scale(1.1);
+    background-color: tomato;
+  }
+
+  main h3 {
+    font-family: cursive;
+    font-size: 25px;
+  }
+
+.about-container {
+  margin-top: -90px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-container .about {
+  flex: 1 1 500px;
+  text-align: center;
+  margin: 12px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-container .about img {
+width: 70px;
+height: auto;
+border-radius: 35px;
+}
+
+.about-container .about p {
+  font-family: lucida sans;
+}
+
+
+.joinInfo h2 {
+  margin-top: -20px;
+  margin-bottom: 8px;
+  font-size: 23px;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border: none;
+  border-radius: 6px;
+  padding: .5rem 2%;
+  margin-right: 100px;
+}
+
+.form legend {
+  padding: 0 .5rem;
+}
+
+.form label {
+  display: block;
+  padding-top: 1rem;
+  font-size: .9rem;
+}
+
+.form div {
+  padding-top: 1rem;
+  font-size: .9rem;
+}
+
+.form input[type="text"],
+.form input[type="tel"],
+.form input[type="email"], 
+.form input [type="number"]
+{
+  background-color: #eee;
+  display: block;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: 400px;
+  appearance: none;
+}
+
+.form input[type="checkbox"]
+{
+  margin-right: 6px;
+}
+
+.form input[type="submit"]{
+  position: sticky;
+  border: none;
+  background-image: linear-gradient(#9c2c13, #6f200e);
+  color: #fff;
+  border-radius: 6px;
+  padding: .8rem;
+  width: 96%;
+  max-width: 400px;
+  margin: -1rem 2% 2rem 2%;
+  margin-top: 10px;
+  box-shadow: 1px 1px 4px #999;
+  align-items: center;
+}
+
+.form input[type="submit"]:hover {
+  transform: translateY(-2.5px); 
+  filter: brightness(1.2);
+}
+
+.form input:required {
+  border-left: solid 8px red;
+}
+
+.form input:required:valid {
+  border-left: solid 8px green;
+}
+
+.contact-info caption {
+  padding: 10px;
+  caption-side: bottom;
+  color: Black;
+  font-size: .85rem;
+  font-style: italic;
+  font-family: lora;
+  font-weight: bold;
+}
+
+.contact-info th,
+.contact-info  td {
+  padding: 12px 15px;
+  border: 1px solid rgb(187, 166, 166);
+  margin-right: 100px;
+}
+
+.contact-info th {
+  background-color: black;
+  font-size: larger;
+  color: white;
+}
+
+.contact-info td {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.organizers .box-container .box{
+  flex: 1 1 30rem;
+  margin: 1rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: .5rem;
+  box-shadow: 0 .5rem 1 rem;
+  height: 25rem;
+}
+
+.organizers .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+organizers .box-container .box .info {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top:0; left: 0;
+  height: 100%;
+  width: 100%;
+  background: #909090;
+}
+
+
+  .current-weather-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-container {
+    padding: 20px; 
+    border-radius: 40px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card {
+    text-align: center;
+}
+
+.current-weather h2,
+.current-weather h4 {
+    margin-bottom: 10px;
+    font-family: Raleway;
+}
+
+.current-weather .details p {
+    margin-bottom: 5px; 
+}
+
+
+.weather-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-cards .card {
+    flex: 0 0 calc(33.33% - 10px); 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+
+footer {
+    background: radial-gradient(#e0c0b6, #e6e2dd);
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer h3 {
+  text-align: center;
+  margin-left: 80px;
+}
+
+.logo-image img {
+  width: 200px;
+  height: auto;
+  border-radius: 40px;
+  box-shadow: inset 20 50 100px radial-gradient(#d0775a, #dccdb9);
+
+}
+
+.payment-method img {
+  width: 80px;
+}
+
+.enhance {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 22px;
+    margin-top: -60px;
+    background: radial-gradient(#d0775a, #dccdb9);
+    background-color: gold;
+}
+
+.map {
+    width: 200px;
+    height: auto;
+    border-radius: 100px;
+}
+
+.payment-method h4,
+.map-container h4 {
+    font-size: 1.2rem;
+    color: #333; 
+    margin-bottom: 10px;
+}
+hr {
+  size: 10px;
+    margin: 10px 0;
+}
+
+#copyright {
+    margin-bottom: 10px;
+}
+
+#lastModified {
+    font-style: italic;
+}
+
+
+
+  @media screen and (max-width: 600px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    #menu-button {
+        display: block;
+        font-size: 2rem;
+        order: 2;
+        align-self: flex-end;
+        margin-top: 10px;
+    }
+
+    #mode {
+        font-size: 2rem;
+        position: absolute;
+        top: 13px;
+        right: 50px;
+    }
+
+   .social-links img {
+    width: 25px;
+    height: 25px;
+    box-shadow: 1px 1px rgba(207, 180, 196, 0.5);
+}
+    .navigation {
+        padding: 10px;
+    }
+    
+      .navigation.open {
+        display: flex;
+        flex-direction: row;
+        margin-left: -8px;
+        margin-bottom: 15px;
+      }
+    
+      .navigation.open a {
+        display: block;
+        text-align: center;
+      }
+    
+      .navigation a {
+        display: none;
+        flex: 1 1 100%;
+      }
+    
+  }
+
+
+
+
+
+
+
+
+
+
+  

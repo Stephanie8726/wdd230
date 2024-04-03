@@ -1,0 +1,41 @@
+{
+    "organizers": [
+      {
+        "name": "Jennifer Smith: Event Planner",
+        "image": "images/organizer1.webp",
+        "role": "Event Planner",
+        "description": "With over 15 years of experience in event planning, Jennifer specializes in creating unforgettable weddings tailored to each couple's unique style and vision. From intimate ceremonies to lavish receptions, she ensures every detail is perfect."
+      },
+      {
+        "name": "Mickah Johnson: Venue Coordinator",
+        "image": "images/organizer2.webp",
+        "role": "Venue Coordinator",
+        "description": "Michael is dedicated to finding the perfect venue for your wedding. With a keen eye for detail and extensive knowledge of local venues, he ensures that your chosen location matches your vision and accommodates your guests comfortably."
+      },
+      {
+        "name": "Sarah Anderson: Music Coordinator",
+        "image": "images/organizer3.webp",
+        "role": "Music Coordinator",
+        "description": "Sarah brings melodies to life and sets the perfect ambiance for your special day. With her vast music collection and expertise in sound management, she ensures that every note resonates with love and joy, creating unforgettable moments for you and your guests."
+      },
+      {
+        "name": "David Martinez: Catering Manager",
+        "image": "images/organizer4.webp",
+        "role": "Catering Manager",
+        "description": "David is passionate about creating culinary experiences that delight the senses. As the catering manager, he works closely with top chefs to design menus that reflect your tastes and preferences, ensuring that every bite is a moment of gastronomic bliss."
+      },
+      {
+        "name": "Emily Taylor: Floral Designer",
+        "image": "images/organizer5.webp",
+        "role": "Floral Designer",
+        "description": "Emily specializes in transforming spaces with her exquisite floral arrangements. With an eye for color and style, she creates breathtaking floral designs that enhance the beauty of your wedding venue and add a touch of elegance to your celebration."
+      },
+      {
+        "name": "John Davis: Photography Director",
+        "image": "images/organizer6.webp",
+        "role": "Photography Director",
+        "description": "John is dedicated to capturing every moment of your special day with artistry and precision. With years of experience in wedding photography, he ensures that your memories are preserved beautifully, allowing you to relive the magic of your wedding day for years to come."
+      }
+    ]
+  }
+  

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture Everlasting Memories: Your Dream Wedding Awaits!</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development / Stephanie Dacullo Selanoba / Final Project - Capture Everlasting Memories: Your Dream Wedding Awaits!">
+    <meta name="author" content="Stephanie Dacullo Selanoba">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/wedding.css">
+    <!-- <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700%7CLora:400,700&display=swap">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title"
+        content="Stephanie Dacullo Selanoba - WDD 230 - Web Frontend Development Final Project / Capture Everlasting Memories: Your Dream Wedding Awaits!">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://photos.google.com/search/_tra_/photo/AF1QipMwN71DBEPipuMOtUPHt2OLsQ0On6WMUo5S1vuX">
+    <meta property="og:url" content="https://stephanie8726.github.io/wdd230/wedding.html">
+</head>
+
+<body>
+    <header>
+        <button id="mode">🌑/🔆</button>
+        <div class="social-links">
+            <a href="https://www.facebook.com/stephlaruga101" target="_blank"><img src="images/facebook.webp"
+                    alt="Facebook"></a>
+            <a href="https://www.instagram.com/in/stephaniedaculloselanoba8726/" target="_blank"><img
+                    src="images/instagram.webp" alt="Instagram"></a>
+        </div>
+        <p>📧dreamwedding@me18.org <br>📞+639879456145</p>
+        <nav class="navigation">
+            <div id="menu-button"></div>
+            <a href="https://stephanie8726.github.io/wdd230/chamber/index.html" target="_blank">hey</a>
+            <a href="https://stephanie8726.github.io/wdd230/wedding/wedding.html" target="_blank">Home</a>
+            <a href="https://stephanie8726.github.io/wdd230/wedding/contact.html" target="_blank">Contact</a>
+            <a href="https://stephanie8726.github.io/wdd230/wedding/partners.html" target="_blank">Organizers</a>
+            <a href="https://stephanie8726.github.io/wdd230/wedding/partners.html" target="_blank">Browse</a>
+        </nav>
+
+    </header>
+
+    <main class="all">
+        <form method="get" action="contact.html" class="form">
+            <section>
+                <div class="cover-image">
+                    <img src="images/wedding1.webp" alt="Wedding Cover">
+                </div>
+                <div class="cover-info">
+                    <h1 class="name">Wedding Bliss: Your Journey to Forever Begins Here</h1>
+                    <p>Begin a magical journey of love and celebration <br> with our carefully curated wedding planning
+                        services and exclusive collections.</p>
+                </div>
+            </section>
+
+            <section class="about-container" id="home">
+                <div class="about">
+                    <h3>Our Mission</h3><br>
+                    <p>At Dream Wedding, our mission is to create unforgettable wedding experiences for couples by
+                        providing exceptional planning services and attention to detail. We strive to exceed our
+                        clients'
+                        expectations and make their special day truly magical.</p>
+                    <br>
+                    <span class="icon1"><img src="images/mission-logo.webp" alt="Mission Icon"></span>
+                </div>
+
+                <div class="about">
+                    <h3>Our Story</h3><br>
+                    <p>Established in 2015 by Tiffany and Drich Johnson, Dream Wedding began as a cozy family venture
+                        focusing on wedding planning services. Driven by their love for crafting unforgettable memories,
+                        the Johnsons aimed to provide couples with a seamless and enchanting wedding journey. Since
+                        then,
+                        Dream Wedding has evolved into a respected wedding planning agency, celebrated for its tailored
+                        service and meticulous attention to detail. Our team of seasoned experts is committed to
+                        bringing
+                        your dream wedding to life.</p>
+                    <br>
+                    <span class="icon2"><img src="images/wedding-ring.webp" alt="Wedding Ring Photo"></span>
+                </div>
+
+                <div class="about">
+                    <h3>Our Clients' Feedback</h3><br>
+                    <p>“Working with Dream Wedding was an absolute pleasure as they handled every detail with care and
+                        professionalism. Our wedding day was truly magical, thanks to their expertise!” <br>➙💕 Emily
+                        and
+                        Michael</p>
+                    <br>
+                    <p>“Dream Wedding exceeded our expectations in every way. They went above and beyond to ensure that
+                        our special day was perfect. We couldn't be happier with the results!” <br>➙💕 Jessica and David
+                    </p>
+                    <br>
+                    
+                    <button class="explore-button">Learn More</button>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <div class="contact-info">
+                    <form method="get" action="contact.html" class="form">
+                        <div class="fieldset-container">
+                            <fieldset>
+                                <legend>Membership Application Form</legend>
+                                <label for="firstName">First Name* <input type="text" id="firstName" name="fname"
+                                        required></label>
+                                <label for="lastName">Last Name* <input type="text" id="lastName" name="lname"
+                                        required></label>
+                                <label for="title">Title/Position* <input type="text" id="title" name="title" required
+                                        pattern="[a-zA-Z\s\-]{7,}" title="Must contain at least 7 characters and only alphabets, spaces, and
+                                        hyphens"></label>
+                                <label for="email">Email* <input type="email" id="email" name="email" required
+                                        placeholder="Your email address"></label>
+                                <label for="phone">Mobile Phone* <input type="tel" id="phone" name="phone" required
+                                        pattern="[0-9]{10,12}"
+                                        title="Please enter a valid phone number (10-12 digits)"></label>
+                                <label for="organization">Organization Name* <input type="text" id="organization"
+                                        name="organization" required placeholder="Enter your organization name"></label>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend><b>Business Information</b></legend>
+                                <label for="description">Organization Description</label>
+                                <textarea id="description" name="description" rows="4" cols="50"
+                                    placeholder="Enter organization description here"></textarea>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend><b>Membership Category</b></legend>
+                                <div>Membership Level</div>
+                                <label><input type="checkbox" name="editing" value="yes"> Non-profit Membership</label>
+                                <label><input type="checkbox" name="code" value="yes"> Bronze Membership</label>
+                                <label><input type="checkbox" name="process" value="yes"> Silver Membership</label>
+                                <label><input type="checkbox" name="client" value="yes"> Gold Membership</label>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend><b>Business Information</b></legend>
+                                <label for="description">Organization Description</label>
+                                <textarea id="description" name="description" rows="4" cols="50"
+                                    placeholder="Enter organization description here"></textarea>
+                            </fieldset>
+                        </div>
+
+                        <table>
+                            <caption>You too can take advantage!</caption>
+                            <thead>
+                                <tr>
+                                    <th colspan="4" scope="colgroup">Membership Level Benefits</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Bronze</th>
+                                    <th scope="col">Silver</th>
+                                    <th scope="col">Gold</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Priority Registration</td>
+                                    <td>✔️</td>
+                                    <td>✔️</td>
+                                    <td>✔️</td>
+                                </tr>
+                                <tr>
+                                    <td>10% Discount on Workshops</td>
+                                    <td>❌</td>
+                                    <td>✔️</td>
+                                    <td>✔️ </td>
+                                </tr>
+                                <tr>
+                                    <td>VIP Events Access</td>
+                                    <td>❌</td>
+                                    <td>❌</td>
+                                    <td>✔️ </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <input type="submit" value="Business Proposal">
+                    </form>
+                </div>
+            </section>
+
+
+            <section class="organizers" id="organizers">
+            <div class="menu">
+                <button id="grid">📜Grid</button>
+                <button id="list">🔰List</button>
+                <div id="organizer-container"></div>
+                </div>
+            </section>
+
+            <div id="current-weather-section" class="current-weather-section">
+                <div class="weather-container">
+                    <div class="weather-card">
+                        <h3>Weather Update</h3>
+                        <div class="current-weather" id="current-weather">
+                            <h4>Current Weather</h4>
+                            <div class="details">
+                                <p>Loading...</p>
+                                <p>Temperature: Loading...</p>
+                            </div>
+                        </div>
+                        <div class="days-forecast" id="days-forecast">
+                            <h4>3-Day Weather Forecast</h4>
+                            <div class="weather-cards" id="weather-cards">
+                                <p class="card">Loading...</p>
+                                <p class="card">Loading...</p>
+                                <p class="card">Loading...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+
+        <div class="enhance">
+            <div class="logo-image">
+                <!-- <h3 id="basic">We Plan: Your Dream Wedding Awaits!</h3> <br> -->
+                <img src="images/wedding-logo.webp" alt="Logo">
+            </div>
+            <div class="payment-method">
+                <!-- <h4>We Accept</h4> <br> -->
+                <img src="images/amex-card.webp" alt="American Express Card">
+                <img src="images/discover-card.webp" alt="Discover Card">
+                <img src="images/visa-card.webp" alt="Visa Card">
+                <img src="images/master-card.webp" alt="Master Card">
+            </div>
+            <div class="map-container">
+                <!-- <h4>📌Visit🌍</h4> -->
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d84459.37326181955!2d124.01940599374602!3d10.252338482105115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1684420228219!5m2!1sen!2sph"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <hr>
+        <p id="copyright">Copyright © Dream Wedding</p><br>
+        <p>Final Project WDD230 - Path to Perfect Weddings <br> Stephanie Dacullo Selanoba</p>
+        <br>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/wedding.js"></script>
+    <script src="scripts/common-functions.js"></script>
+</body>
+
+</html>
