@@ -64,7 +64,7 @@
     cursor: pointer;
     font-size: 18px;
     border-radius: 4px;
-    border: 1px solid;
+    border: 2px solid goldenrod;
   }
   
   #mode:hover {
@@ -348,8 +348,9 @@ hr {
 }
 
 footer {
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
   background: radial-gradient(gold, rgb(148, 137, 230));
-  padding: 20px;
+  padding: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
