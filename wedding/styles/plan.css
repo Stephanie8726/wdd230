@@ -263,7 +263,7 @@ border-radius: 35px;
   margin-bottom: 20px;
 }
 
-.weather-cards {
+/* .weather-cards {
   display: flex;
   justify-content: center;
   position: relative;
@@ -282,24 +282,32 @@ bottom: 280px;
 width: 130px;
 border-radius: 8px;
 padding: 10px;
+} */
+
+#current-weather-section {
+  position: relative;
+  top: -580px; 
+  left: 20px;
+  margin-bottom: -460px;
 }
+
+/* 
+.weather-cards .card {
+  border-radius: 5px; 
+  text-align: center;
+} */
 
 
 .weather-card h4 {
 font-style: italic;
 font-family: monospace;
 padding: 10px;
-font-size: 18px;
+font-size: 24px;
+margin-left: -10px;
 }
 
-.weather-cards .card {
-  border-radius: 5px; 
-  text-align: center;
-}
 
 .days-forecast p, .current-weather p {
-/* color: tomato; */
-
 font-style: italic;
 font-size: 14px;
 }
@@ -458,17 +466,13 @@ display: grid;
 align-items: center;  
 justify-content: center;
 column-gap: 5px;
-margin-top: -190px;
+margin-top: -720px;
 width: 80%;
 margin-left: 100px;
 }
 
 .contact-info h2 {
   text-align: center;  
-  max-width: 100%;
-  color: black;
-  margin-top: -10px;
-  padding: 20px;
 }
 
 .contact-info caption {
@@ -503,7 +507,7 @@ margin-left: 100px;
 /*------ submit form-------- */
 .thanks {
   padding: 20px;
-  margin-top: -100px;
+  margin-top: -550px;
   margin-bottom: 20px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 
@@ -546,7 +550,7 @@ margin-left: 100px;
     text-align: center;  
     background: radial-gradient(gold, rgb(121, 110, 207));
     padding: 25px;
-    margin-top: -120px;
+    margin-top: -580px;
     color: black;
 }
 
@@ -568,7 +572,7 @@ margin-left: 100px;
     text-align: center;  
     background: radial-gradient(gold, rgb(121, 110, 207));
     padding: 25px;
-    margin-top: -120px;
+    margin-top: -580px;
     color: black;
     font-size: 30px;
   font-family: lora;
@@ -641,7 +645,7 @@ transition: 1s ease;
 text-align: center;  
 background: radial-gradient(gold, rgb(121, 110, 207));
 padding: 25px;
-margin-top: -120px;
+margin-top: -580px;
 color: black;
 }
 
@@ -829,25 +833,33 @@ img {
   }
 
   .wedding-dress h2 {
-    margin-top: -60px;
+    margin-top: -520px;
     }
     
 
   /* testimonies */
   .feedback {
-    margin-top: -90px;
+    margin-top: -520px;
   }
 
 
   /* organizers */
   .organizers-info h2 {
-    margin-top: -90px;
+    margin-top: -520px;
     font-size: medium;
   }
 
+
+/* submit */
   .thanks h2 {
     margin-top: 40px;
     font-size: 15px;
   }
+
+/* planner */
+.center {
+  font-size: medium;
+  top: -85px;
+}
 
 }
