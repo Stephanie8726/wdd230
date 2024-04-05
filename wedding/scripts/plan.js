@@ -1,18 +1,27 @@
-const url = 'wedding/organizers.json';
-const organizersContainer = document.querySelector('#organizer-container');
-async function getOrganizersData() {
+//fetching json file
+const url = 'https://stephanie8726.github.io/wdd230/wedding/organizers.json';
+
+document.addEventListener("DOMContentLoaded", function() {
+    const organizersContainer = document.querySelector('#organizer-container');
+    if (organizersContainer) {
+        getOrganizersData(organizersContainer);
+    } else {
+        console.error('Error: organizer-container element not found in the DOM');
+    }
+});
+
+async function getOrganizersData(organizersContainer) {
     try {
         const response = await fetch(url);
         const data = await response.json();
-        displayOrganizers(data.organizers);
+        console.log('Fetched organizers data:', data);
+        displayOrganizers(data.organizers, organizersContainer);
     } catch (error) {
         console.error('Error fetching or parsing organizers data:', error);
     }
 }
 
-getOrganizersData();
-
-const displayOrganizers = (organizers) => {
+const displayOrganizers = (organizers, organizersContainer) => {
     organizers.forEach((organizer) => {
         let card = document.createElement('div');
         card.classList.add('organizer-card'); 
@@ -21,7 +30,7 @@ const displayOrganizers = (organizers) => {
         organizerName.textContent = organizer.name;
 
         let organizerRole = document.createElement('p');
-        organizerRole.textContent = `Role: ${organizer.role}`;
+        // organizerRole.textContent = `${organizer.role}`;
 
         let organizerDescription = document.createElement('p');
         organizerDescription.textContent = organizer.description;
@@ -30,25 +39,14 @@ const displayOrganizers = (organizers) => {
         organizerImage.src = organizer.image;
         organizerImage.alt = `Image of ${organizer.name}`;
 
+        card.appendChild(organizerImage);
         card.appendChild(organizerName);
         card.appendChild(organizerRole);
         card.appendChild(organizerDescription);
-        card.appendChild(organizerImage);
+       
 
         organizersContainer.appendChild(card);
     });
 }
 
-const gridButton = document.querySelector("#grid");
-const listButton = document.querySelector("#list");
 
-// Define a function to toggle between grid and list view
-function toggleView(view) {
-    organizersContainer.classList.toggle("grid", view === "grid"); 
-    organizersContainer.classList.toggle("list", view === "list");
-}
-
-gridButton.addEventListener("click", () => toggleView("grid"));
-listButton.addEventListener("click", () => toggleView("list"));
-
-toggleView("grid");
