@@ -660,7 +660,6 @@ transition: 1s ease;
 }
 
 .grid p {
-  /* float: top; */
   font-style: italic;
   font-family: monospace;
   font-size: 14px;
