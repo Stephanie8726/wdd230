@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Bike Rentals: Explore Cozumel with Ease and Style</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development / Stephanie Dacullo Selanoba / Final Project - Scoots Bike Rentals - Explore Cozumel with Ease and Style">
+    <meta name="author" content="Stephanie Dacullo Selanoba">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700%7CLora:400,700&display=swap">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title"
+        content="Stephanie Dacullo Selanoba - WDD 230 - Web Frontend Development Final Project / Scoots Bike Rentals - Explore Cozumel with Ease and Style">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://yourdomain.com/path/to/your-image.jpg">
+    <meta property="og:url" content="https://stephanie8726.github.io/wdd230/scoots/home.html">
+</head>
+
+<body>
+    <header>
+        <div class="message">
+            <p>Today's highest temperature: <span id="temp-max"></span></p>
+            <button class="close-btn">❌</button>
+        </div>
+
+        <nav class="navigation">
+            <div id="menu-button"></div>
+            <a href="https://stephanie8726.github.io/wdd230/scoots/home.html" target="_blank">Home</a>
+            <a href="https://stephanie8726.github.io/wdd230/scoots/contact.html" target="_blank">Contact</a>
+            <a href="https://stephanie8726.github.io/wdd230/scoots/rentals.html" target="_blank">Rentals</a>
+            <a href="https://stephanie8726.github.io/wdd230/scoots/reservations.html" target="_blank">Reservations</a>
+        </nav>
+
+    </header>
+
+    <main class="all">
+
+
+        <section>
+            <div class="cover-image">
+                <img src="images/cover1.webp" alt="Scoots Cover Image">
+            </div>
+            <div class="cover-info">
+                <h1 class="name">Scoots Bike Rentals: Explore Cozumel with Ease and Style</h1>
+                <p>Discover Cozumel effortlessly with Scoots Bike Rentals.Conveniently located near key transportation
+                    hubs, we offer a diverse range of motor scooters, jeeps, and ATVs for exploring the island's
+                    stunning landscapes.</p>
+            </div>
+        </section>
+
+        <section class="weather-info">
+            <div id="current-weather"></div>
+            <div id="next-day-forecast"></div>
+        </section>
+
+        <section class="call-btn">
+            <a href="https://stephanie8726.github.io/wdd230/scoots/contact.html" target="_blank" class="reservation-btn">Book Your Ride Now!</a>
+        </section>
+        <br><br><br><br>
+
+        <section class="flex-container">
+            <section class="rental-summary">
+                <h2 class="center">Scoots Rental Summary</h2>
+                <p>Explore our diverse rental options, perfect for any adventure. From nimble Honda scooters for solo
+                    exploration to rugged Jeeps for group outings, find the ideal vehicle for your Cozumel escapade.</p>
+
+                <ul>
+                    <li>Honda Motor Scooters:
+                        <ul>
+                            <li>🏍️ Honda Metropolitan (49cc) - 1 person</li>
+                            <li>🏍️ Honda Dio (110cc) - 2 person</li>
+                            <li>🏍️ Honda PCX150 (149cc) - 2 person</li>
+                        </ul>
+                    </li><br>
+                    <li>Side-by-Side ATVs:
+                        <ul>
+                            <li> 🚘 Honda Pioneer 1000 - 4 person</li>
+                        </ul>
+                    </li><br>
+                    <li>Jeeps:
+                        <ul>
+                            <li>🚘 Jeep Wrangler - 4 door manual with A/C - 5 person</li>
+                            <li>🚘 Jeep Wrangler - 2 door - open air - manual - 4 person</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </section>
+
+            <section>
+                <div class="facility">
+                    <h3>About Cozumel and Our Rental Facility</h3>
+                    <img src="images/rental-facility4.webp" alt="Rental Facility Image" loading="lazy">
+                    <p>Cozumel, located off the eastern coast of Mexico's Yucatán Peninsula, is renowned for its stunning beaches, vibrant coral reefs, and rich cultural heritage. At our rental facilities, we offer a diverse range of equipment and services to ensure an unforgettable experience exploring the island's natural wonders. From snorkeling gear to bicycles and even scooter rentals, our facilities cater to all your adventure needs, providing convenient and reliable options for exploring every corner of this paradise island.</p>
+                </div>
+            </section>
+        </section>
+        <footer>
+
+            <div class="logo-image">
+                <img src="images/scoots-logo.webp" alt="Logo" loading="lazy">
+            </div>
+
+        
+            <div class="contact-info">
+                <p>Contact Us:</p>
+                <p>📞 +123-456-7890</p>
+                <p>📧 info@scootsrentals.com</p>
+                <p>📌123 Main Street, Cozumel, Mexico</p>
+                <a href="https://www.facebook.com/stephlaruga101" target="_blank"><img src="images/facebook.webp"
+                        alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.webp"
+                        alt="Instagram"></a>
+                <a href="https://www.whatsapp.com/" target="_blank"><img src="images/whatsapp.webp" alt="WhatsApp"></a>
+            </div>
+
+            <div class="enhance">
+                <section>
+                    <p id="beau">Scoots Bike Rentals: Explore Cozumel with Ease and Style<br>
+                        Stephanie Dacullo Selanoba</p>
+                </section>
+            </div>
+            <hr>
+            <p id="copyright">Copyright © Dream Wedding</p>
+            <p id="lastModified"></p>
+
+        </footer>
+
+        <script src="scripts/common-functions.js"></script>
+        <script src="scripts/home.js"></script>
+</body>
+
+</html>

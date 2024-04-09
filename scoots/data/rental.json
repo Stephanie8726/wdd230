@@ -1,0 +1,73 @@
+{
+    "types_of_rentals": [
+        {
+            "type": "Honda Motor Scooters",
+            "options": [
+                {
+                    "image": "images/honda-metropolitan.webp",
+                    "model": "~Honda Metro Scooter",
+                    "capacity": "1",
+                    "reservation_half_day": "$20",
+                    "reservation_full_day": "$35",
+                    "walk_in_price_half_day": "$25",
+                    "walk_in_price_full_day": "$35"
+                },
+                {
+                    "image": "images/honda-dio.webp",
+                    "model": "~Honda Dio Scooter",
+                    "capacity": "2",
+                    "reservation_half_day": "$30",
+                    "reservation_full_day": "$40",
+                    "walk_in_price_half_day": "$35",
+                    "walk_in_price_full_day": "$45"
+                },
+                {
+                    "image": "images/honda-pcx150.webp",
+                    "model": "~Honda PCX150 Scooter",
+                    "capacity": "2",
+                    "reservation_half_day": "$40",
+                    "reservation_full_day": "$50",
+                    "walk_in_price_half_day": "$45",
+                    "walk_in_price_full_day": "$55"
+                }
+            ]
+        },
+        {
+            "type": "Side-by-Side ATVs",
+            "options": [
+                {
+                    "image": "images/honda-pioneer.webp",
+                    "model": "Honda Pioneer ATV",
+                    "capacity": "4",
+                    "reservation_half_day": "$50",
+                    "reservation_full_day": "$70",
+                    "walk_in_price_half_day": "$60",
+                    "walk_in_price_full_day": "$80"
+                }
+            ]
+        },
+        {
+            "type": "Jeeps",
+            "options": [
+                {
+                    "image": "images/jeep-wrangler1.webp",
+                    "model": "Jeep Wrangler - 4 door manual with a/c",
+                    "capacity": "5",
+                    "reservation_half_day": "$70",
+                    "reservation_full_day": "$100",
+                    "walk_in_price_half_day": "$85",
+                    "walk_in_price_full_day": "$125"
+                },
+                {
+                    "image": "images/jeep-wrangler2.webp",
+                    "model": "Jeep Wrangler - 2 door",
+                    "capacity": "4",
+                    "reservation_half_day": "$60",
+                    "reservation_full_day": "$85",
+                    "walk_in_price_half_day": "$70",
+                    "walk_in_price_full_day": "$90"
+                }
+            ]
+        }
+    ]
+}

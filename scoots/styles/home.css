@@ -1,0 +1,744 @@
+:root {
+    --pastel-blue: #aec6cf;
+    --pastel-green: #b7e6a5;
+    --pastel-orange: #ffb347;
+    --pastel-pink: #ffb6c1;
+    --soft-gray: #cccccc;
+    --pastel-dark-nude: #c0a59c;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(#e8d0c8, #e8e2da);
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+  }
+
+  img[src='images/cover1.webp'] {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+  }
+  
+  .cover-info h1 {
+    font-size: 2rem;
+  }
+
+  .cover-info {
+    text-align: center;
+  }
+
+  .cover-info p {
+    text-align: center;
+  }
+  
+  .cover-info p, h1 {
+    position: relative;
+    top: -620px;
+    text-align: center;
+    color: rgb(216, 63, 36);
+    font-family: monospace;
+    font-style: italic;
+}
+  
+  header {
+    background-image: url('https://www.popsci.com/uploads/2023/08/30/bmw-ce-04-riding.jpg?auto=webp');
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-items: center;
+    padding: 10px;
+  }
+
+  header .navigation {
+    display: flex;
+    text-decoration: none;
+    gap: 20px;
+    align-items: center;
+    font-family: monospace;
+  }
+  
+  header .navigation a {
+    color:black;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: cursive;
+    text-shadow: 1px 4px 1px rgb(0, 0, 0, 0.1); 
+  }
+  
+  header .navigation a:hover {
+    text-decoration: underline;
+    color: tomato;
+    font-size: 16px;
+  }
+
+  #menu-button {
+    display: none; /* remove in a bigger screen */
+  }
+
+  #menu-button::before {
+    content: "☰";
+    position: absolute;
+    top: 1.1rem;
+    right: 1.5rem;
+    padding:0.3rem;
+    background-color: #909090;
+    border-radius: 2px; 
+  }
+  
+  #menu-button.open::before {
+    content: "❌";
+  }
+
+  #menu-button:hover {
+    background-color: #f2b5a1;
+    border-radius: 2px; 
+    padding: 10px;
+    background: var(--pastel-blue);
+  } 
+
+  .logo-image img {
+    position: relative;
+    top:60px;
+    right: 30px;
+    width: 70px;
+    border-radius: 75px;
+  }
+  
+  .logo-image img:hover {
+    filter: blur(1px);
+  }
+
+
+  /* closable message for the max-temp */
+.message {
+  bottom: 50px;
+  right: 650px;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  width: 340px;
+  height: 40px;
+  border: 10px;
+  font-style: italic;
+  font-family: monospace;
+  background-image: url('https://www.treehugger.com/thmb/z9XWueIDAUQI6QvXfCR6JyuFzl8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2018__08__CollectionOfCloudsAgainstABlueSky-8cae9f3109d14dcf98d9facc5775222f.jpg');
+  margin-left: 10px;
+  border-radius: 4px;
+}
+
+.message:hover {
+  transform: scale(1.1);
+  color: tomato;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 30px;
+
+}
+
+  /* current and next day forecast */
+  .weather-info {
+    border-radius: 10px;
+    margin-top: -440px;
+    width: 15%;
+    font-style: italic;    
+  }
+  
+  .weather-info h4 {
+    margin-bottom: 10px;
+    color: black;
+    font-family: cursive;
+  }
+  
+  .weather-info p {
+    margin-bottom: 5px;
+    color: black;
+    font-style: italic;
+    font-family: monospace;
+  }
+  
+  .weather-info img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+  }
+
+
+.flex-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.rental-summary,
+.facility {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.rental-summary h2,
+.facility h3 {
+  font-style: italic;
+  font-family: cursive;
+  margin-bottom: 15px;
+}
+
+.rental-summary p,
+.facility p {
+  font-style: italic;
+  font-family: monospace;
+}
+
+.facility img {
+  margin-bottom: 15px;
+  border-radius: 8px;
+  max-width: 100%;
+  border-bottom: 1px solid goldenrod;
+  border-right: 3px solid goldenrod;
+}
+
+.facility img:hover {
+  transform: rotateZ(-10deg);
+}
+
+.rental-summary ul li {
+  font-style: italic;
+  font-family: monospace;
+  margin-top: 8px;
+}
+
+
+/* call to action reservation button */
+  .call-btn {
+    text-align: center;
+    color: black;
+    margin-top: -20px;
+  }
+
+  .call-btn a {
+    text-decoration: none;
+  }
+  
+  .reservation-btn {
+    background-image: url('https://www.popsci.com/uploads/2023/08/30/bmw-ce-04-riding.jpg?auto=webp');
+    color: #fff;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    font-size: 16px;
+    cursor: pointer; 
+    font-family: monospace;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .reservation-btn:hover {
+    transform: scale(1.1);
+    border: 1px solid goldenrod;
+  }
+
+  .reservation-btn a {
+    color: white;
+    text-decoration: none;
+  }
+
+
+
+footer {
+  background: radial-gradient(gold, rgb(148, 137, 230));
+  background-image: url('https://www.popsci.com/uploads/2023/08/30/bmw-ce-04-riding.jpg?auto=webp');
+  padding: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.enhance h3 {
+  text-align: center;
+  font-family: lora;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+}
+
+/* line break */
+hr {
+  margin: 10px 0;
+}
+
+/* contact deatils like the phone number and social media links */
+.contact-info {
+  display: flex; 
+  justify-content: center;
+  background-color: #f8f9fa;
+  padding: 10px; 
+  font-size: 14px;
+  border-radius: 8px;
+  margin-top: -90px; 
+  text-align: center; 
+  margin-bottom: 20px;
+  font-style: italic;
+  font-family: monospace;
+}
+
+.contact-info p {
+  margin: 0 10px; 
+  font-size: 16px;
+  color: #333;
+}
+
+
+
+.contact-info img {
+  width: 25px;
+  height: 25px;
+  border-radius: 12px;
+  margin-right: 20px;
+}
+
+
+.contact-info img:hover {
+  transform: scale(1.5);
+  box-shadow: 1px 1px goldenrod;
+}
+
+
+
+/* ----------contact--------- */
+.map {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.map iframe {
+  width: 100%; 
+  height: 200px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.map h2 {
+  margin-top: 20px;
+  text-align: center;
+  font-family: cursive;
+}
+
+
+.contact-form {
+  margin-top: 40px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px
+  
+}
+
+.contact-form a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-form h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  font-family: cursive;
+}
+
+.contact-form form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+  font-family: monospace;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  background-color: #eee;
+  display: block;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button[type="submit"] {
+  background-image: url('https://www.popsci.com/uploads/2023/08/30/bmw-ce-04-riding.jpg?auto=webp');
+  border: none;
+  border-radius: 6px;
+  padding: .8rem;
+  width: 100%;
+  font-family: 'Lora', serif;
+  cursor: pointer;
+  transition: transform 0.3s, filter 0.3s;
+  filter: brightness(1.2);
+}
+
+.contact-form button[type="submit"]:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.2);
+}
+
+
+
+/*------ submit.html-------- */
+.thanks {
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.thanks h2 {
+  text-align: center;
+  font-family: monospace;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.thanks p {
+  font-family: monospace;
+  font-style: italic;
+}
+
+.thanks p:hover {
+  color: tomato;
+  font-size: 16px;
+}
+
+
+/* ------rental.html------ */
+.rentals-info img {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  border-bottom: 1px solid goldenrod;
+  border-right: 2px solid goldenrod;
+}
+
+.rentals-info img:hover {
+  transform: scale(1.5);
+  }
+  
+
+.rentals-info th, .rentals-info td {
+  padding: 12px 15px;
+  border: 1px solid rgb(187, 166, 166);
+  font-family: monospace;
+}
+
+.rentals-info th {
+  background-color: rgb(22, 22, 126);
+  color: white;
+}
+
+
+.rentals-info td {
+  text-align: center;
+  font-weight: bold;
+}
+
+.rentals-info {
+  display: flex;
+  justify-content: center;
+}
+
+#rentals-table {
+  max-width: 100%;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+
+
+/* --------reservations.html-------- */
+.container {
+  display: grid;
+  align-items: center;  
+  justify-content: center;
+}
+
+.agreement {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 2px;
+}
+
+.agreement h2 {
+  margin-bottom: 20px;
+  font-family: cursive;
+}
+
+.agreement ul {
+  list-style: none;
+  line-height: 26px;
+  font-family: monospace;
+  font-style: italic;
+}
+
+.agreement li {
+  margin-bottom: 5px;
+}
+
+.rental-form fieldset {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  border: none;
+  padding: 20px;
+  font-family: cursive;
+}
+
+.form-group label, 
+.form-group input, 
+.form-group select {
+  font-family: monospace;
+  margin-bottom: 10px; /* Add space below each form element */
+}
+
+.container legend {
+  font-size: 25px;
+  margin-bottom: 20px; /* Add space below the legend */
+}
+
+.form-group div {
+  padding-top: 1.2rem;
+}
+
+.form-group select[name="rental-type"],
+.form-group textarea[name="comments"],
+.form-group input[type="date"],
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"], 
+.form-group input[type="number"] {
+  background-color: #eee;
+  display: block;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: .75rem;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 15px; /* Add space below each form element */
+}
+
+
+.form-group textarea[name="comments"] {
+  min-height: 100px;
+}
+
+.form-group a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-group input:required {
+  border-left: solid 8px red;
+}
+
+.form-group input:required:valid {
+  border-left: solid 8px green;
+}
+
+
+/* lazy loading images */
+img {
+  animation: fade 5s;
+}
+
+@keyframes fade {
+  0% {
+      opacity: 0
+  }
+
+  100% {
+      opacity: 1;
+    }
+  }
+
+
+
+
+
+
+
+
+  /* smallest screen */
+  @media screen and (max-width: 480px)
+  {
+    .weather-info {
+      margin-bottom: 100px;
+    }
+
+    .rentals-table {
+      width: 5%;
+    }
+
+  }
+
+
+
+
+
+/* smaller screen */
+  @media screen and (max-width: 600px) {
+
+    /* main page - plan.html*/
+    html {
+        font-size: 55%;
+    }
+
+    #menu-button {
+        display: block;
+        font-size: 2rem;
+        margin-top: 10px;
+        color: #fff;
+    }
+
+.navigation {
+  padding: 15px;
+  margin-left: 55px;
+}
+
+.navigation.open {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation.open a {
+  display: block;
+  text-align: center;
+  font-size: small;
+}
+
+.navigation a {
+  display: none;
+  flex: 1 1 100%;
+}
+
+.navigation a:hover {
+  font-size: 16px;
+}
+
+
+.cover-info p, h1 {
+  position: relative;
+  top: -600px;
+}
+
+
+  /* max-temp close message */
+  .message {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+  }
+
+  /* main logo */
+  .logo-image img {
+    margin-bottom: 20px;
+    margin-left: 40px;
+    border-radius: 4px;
+  }
+  .weather-info {
+    margin-bottom: 100px;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rentals-table {
+    width: 10%;
+  }
+
+  .flex-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    margin-top: 20px;
+  }
+
+  .container {
+    margin-top: 10px;
+  }
+
+}
+
+
+
+
+
+/* medium screen */
+@media screen and (max-width: 768px){
+  nav {
+    font-size: smaller;
+  }
+
+  .weather-info {
+    margin-top: -580px;
+}
+
+.rentals-info img {
+  width: 50px;
+  height: 50px;
+} 
+
+.logo-image img {
+  position: relative;
+  top: 123px;
+}
+
+
+}
+
+
+
+
+/* larger screen */
+@media screen and (max-width: 1100px) {
+  .weather-info {
+    margin-top: -500px;
+    font-size: small;
+    width: 500px;
+  }
+
+
+}

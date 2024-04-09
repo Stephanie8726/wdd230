@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots Bike Rentals: Explore Cozumel with Ease and Style</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development / Stephanie Dacullo Selanoba / Final Project - Scoots Bike Rentals - Explore Our Wide Rental Models Reservation">
+    <meta name="author" content="Stephanie Dacullo Selanoba">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700%7CLora:400,700&display=swap">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title"
+        content="Stephanie Dacullo Selanoba - WDD 230 - Web Frontend Development Final Project / Scoots Bike Rentals - Explore Our Wide Rental Models Reservation">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://photos.app.goo.gl/RPQanYbg83kmsF2E7">
+    <meta property="og:url" content="https://stephanie8726.github.io/wdd230/scoots/home.html">
+</head>
+
+<body>
+    <header>
+        <div class="message">
+            <p>Today's highest temperature: <span id="temp-max"></span></p>
+            <button class="close-btn">❌</button>
+        </div>
+
+        <nav class="navigation">
+            <div id="menu-button"></div>
+            <a href="https://stephanie8726.github.io/wdd230/scoots/home.html" target="_blank">Home</a>
+            <a href="https://stephanie8726.github.io/wdd230/scoots/contact.html" target="_blank">Contact</a>
+            <a href="https://stephanie8726.github.io/wdd230/scoots/rentals.html" target="_blank">Rentals</a>
+            <a href="https://stephanie8726.github.io/wdd230/scoots/reservations.html" target="_blank">Reservations</a>
+        </nav>
+
+    </header>
+
+    <main class="all">
+
+
+        <section>
+            <div class="cover-image">
+                <img src="images/cover1.webp" alt="Scoots Cover Image">
+            </div>
+            <div class="cover-info">
+                <h1 class="name">Scoots Bike Rentals: Explore Cozumel with Ease and Style</h1>
+                <p>Discover Cozumel effortlessly with Scoots Bike Rentals.Conveniently located near key transportation
+                    hubs, we offer a diverse range of motor scooters, jeeps, and ATVs for exploring the island's
+                    stunning landscapes.</p>
+            </div>
+        </section>
+
+        <section class="weather-info">
+            <div id="current-weather"></div>
+            <div id="next-day-forecast"></div>
+        </section>
+
+        <section class="call-btn">
+            <a href="https://stephanie8726.github.io/wdd230/scoots/contact.html" target="_blank" class="reservation-btn">Book Your Ride Now!</a>
+        </section>
+
+        <br><br><br><br>
+
+
+        <div class="rentals-info">
+            <table id="rentals-table">
+
+                <thead>
+                
+                    <tr>
+                        <th colspan="7" scope="colgroup">Explore Our Wide Rental Models Reservation</th>
+                    </tr>
+
+                    <tr>
+                        <th scope="col">Img</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Max.<br>Persons</th>
+                        <th scope="col">Res<br>Half Day<br>(3 hrs)</th>
+                        <th scope="col">Res<br>(Full Day)</th>
+                        <th scope="col">Walk-in<br>Half Day<br>(3 hrs)</th>
+                        <th scope="col">Walk-in<br>(Full Day)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- Rentals will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+                    <footer>
+                        <div class="logo-image">
+                            <img src="images/scoots-logo.webp" alt="Logo" loading="lazy">
+                        </div>
+
+                        <div class="contact-info">
+
+                            <p>Contact Us:</p>
+                            <p>📞 +123-456-7890</p>
+                            <p>📧 info@scootsrentals.com</p>
+                            <p>📌123 Main Street, Cozumel, Mexico</p>
+                            <a href="https://www.facebook.com/stephlaruga101" target="_blank"><img
+                                    src="images/facebook.webp" alt="Facebook"></a>
+                            <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.webp"
+                                    alt="Instagram"></a>
+                            <a href="https://www.whatsapp.com/" target="_blank"><img src="images/whatsapp.webp"
+                                    alt="WhatsApp"></a>
+                        </div>
+
+
+                        <div class="enhance">
+                            <section>
+                                <p id="beau">Scoots Bike Rentals: Explore Cozumel with Ease and Style<br>
+                                    Stephanie Dacullo Selanoba</p>
+                            </section>
+                        </div>
+                        <hr>
+                        <p id="copyright">Copyright © Dream Wedding</p>
+                        <p id="lastModified"></p>
+
+                    </footer>
+
+                    <script src="scripts/common-functions.js"></script>
+                    <script src="scripts/home.js"></script>
+                    <script src="scripts/rental.js"></script>
+</body>
+
+</html>
