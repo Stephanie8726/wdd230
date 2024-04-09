@@ -155,7 +155,8 @@
   /* current and next day forecast */
   .weather-info {
     border-radius: 10px;
-    margin-top: -440px;
+    margin-top: -410px;
+    margin-left: 20px;
     width: 15%;
     font-style: italic;    
   }
