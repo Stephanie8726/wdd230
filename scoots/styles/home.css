@@ -155,7 +155,7 @@
   /* current and next day forecast */
   .weather-info {
     border-radius: 10px;
-    margin-top: -410px;
+    margin-top: -430px;
     margin-left: 20px;
     width: 15%;
     font-style: italic;    
@@ -685,7 +685,7 @@ img {
     border-radius: 4px;
   }
   .weather-info {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
   }
   
   .contact-info {
@@ -708,7 +708,7 @@ img {
 
 
   .thanks h2 {
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   .map iframe {
