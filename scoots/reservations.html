@@ -56,7 +56,7 @@
             <div id="current-weather"></div>
             <div id="next-day-forecast"></div>
         </section>
- 
+
         <br><br><br><br>
 
         <div class="container">
@@ -79,101 +79,100 @@
             <section class="rental-form">
                 <form method="get" action="submit.html" class="form">
 
-                <fieldset>
-                    <legend>Rental Details</legend>
-                    <div class="form-group">
-                        <label for="date">Date:</label>
-                        <input type="date" id="date" name="date" required>
-                    </div>
-            
-                    <div class="form-group">
-                        <label for="period">Period (ex. whole day/3 hrs.):</label>
-                        <input type="text" id="period" name="period" required>
-                    </div>
-            
-                    <div class="form-group">
-                        <label for="rental-type">Rental Type:</label>
-                        <select id="rental-type" name="rental-type" required>
-                            <option value="scooter">Scooter</option>
-                            <option value="jeep">Jeep</option>
-                            <option value="atv">ATV</option>
-                        </select>
-                    </div>
-            
-                    <div class="form-group">
-                        <label for="number">Number of Rentals:</label>
-                        <input type="number" id="number" name="number" min="1" required>
-                    </div>
-            
-                    <div class="form-group">
-                        <label for="phone">Phone Number(At least 9 numbers):</label>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{9,}" required>
-                    </div>
-            
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-            
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-            
-                    <div class="form-group">
-                        <label for="state-country">Home State or Country:</label>
-                        <input type="text" id="state-country" name="state-country" required>
-                    </div>
-            
-                    <div class="form-group">
-                        <label for="cruise-line">Cruise Line (if applicable):</label>
-                        <input type="text" id="cruise-line" name="cruise-line">
-                    </div>
-            
-                    <div class="form-group">
-                        <label for="comments">Special Accommodations/Comments:</label>
-                        <textarea id="comments" name="comments"></textarea>
-                    </div>
-            
-                    <button type="submit" class="reservation-btn">Reserve Your Favorite Ride Now</button>
-                </fieldset>
+                    <fieldset>
+                        <legend>Rental Details</legend>
+                        <div class="form-group">
+                            <label for="date">Date:</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="period">Period (ex. whole day/3 hrs.):</label>
+                            <input type="text" id="period" name="period" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="rental-type">Rental Type:</label>
+                            <select id="rental-type" name="rental-type" required>
+                                <option value="" disabled selected>Select rental type</option>
+                                <option value="scooter">Scooter</option>
+                                <option value="jeep">Jeep</option>
+                                <option value="atv">ATV</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="number">Number of Rentals:</label>
+                            <input type="number" id="number" name="number" min="1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number(At least 9 numbers):</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{9,}" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="state-country">Home State or Country:</label>
+                            <input type="text" id="state-country" name="state-country" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cruise-line">Cruise Line (if applicable):</label>
+                            <input type="text" id="cruise-line" name="cruise-line">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comments">Special Accommodations/Comments:</label>
+                            <textarea id="comments" name="comments"></textarea>
+                        </div>
+
+                        <button type="submit" class="reservation-btn">Reserve Your Favorite Ride Now</button>
+                    </fieldset>
+                </form>
             </section>
-            </form>
         </div>
-        <footer>
+    </main>
 
+    <footer>
+        <div class="logo-image">
+            <img src="images/scoots-logo.webp" alt="Logo" loading="lazy">
+        </div>
 
-            <div class="logo-image">
-                <img src="images/scoots-logo.webp" alt="Logo" loading="lazy">
-            </div>
+        <div class="contact-info">
+            <p>Contact Us:</p>
+            <p>📞 +123-456-7890</p>
+            <p>📧 info@scootsrentals.com</p>
+            <p>📌123 Main Street, Cozumel, Mexico</p>
+            <a href="https://www.facebook.com/stephlaruga101" target="_blank"><img src="images/facebook.webp"
+                    alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.webp"
+                    alt="Instagram"></a>
+            <a href="https://www.whatsapp.com/" target="_blank"><img src="images/whatsapp.webp" alt="WhatsApp"></a>
+        </div>
 
-            <div class="contact-info">
-                <p>Contact Us:</p>
-                <p>📞 +123-456-7890</p>
-                <p>📧 info@scootsrentals.com</p>
-                <p>📌123 Main Street, Cozumel, Mexico</p>
-                <a href="https://www.facebook.com/stephlaruga101" target="_blank"><img src="images/facebook.webp"
-                        alt="Facebook"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.webp"
-                        alt="Instagram"></a>
-                <a href="https://www.whatsapp.com/" target="_blank"><img src="images/whatsapp.webp" alt="WhatsApp"></a>
-            </div>
+        <div class="enhance">
+            <section>
+                <p id="beau">Scoots Bike Rentals: Explore Cozumel with Ease and Style<br>
+                    Stephanie Dacullo Selanoba</p>
+            </section>
+        </div>
+        <hr>
+        <p id="copyright">Copyright © Dream Wedding</p>
+        <p id="lastModified"></p>
+    </footer>
 
-
-            <div class="enhance">
-                <section>
-                    <p id="beau">Scoots Bike Rentals: Explore Cozumel with Ease and Style<br>
-                        Stephanie Dacullo Selanoba</p>
-                </section>
-            </div>
-            <hr>
-            <p id="copyright">Copyright © Dream Wedding</p>
-            <p id="lastModified"></p>
-
-        </footer>
-
-        <script src="scripts/common-functions.js"></script>
-        <script src="scripts/home.js"></script>
+    <script src="scripts/common-functions.js"></script>
+    <script src="scripts/home.js"></script>
 </body>
 
 </html>

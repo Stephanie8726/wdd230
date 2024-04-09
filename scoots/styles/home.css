@@ -247,7 +247,7 @@
   
   .reservation-btn {
     background-image: url('https://www.popsci.com/uploads/2023/08/30/bmw-ce-04-riding.jpg?auto=webp');
-    color: #fff;
+    color: black;
     padding: 10px 20px; 
     border: none;
     border-radius: 5px; 
@@ -508,6 +508,7 @@ hr {
 .agreement h2 {
   margin-bottom: 20px;
   font-family: cursive;
+  text-align: center;
 }
 
 .agreement ul {
@@ -527,6 +528,7 @@ hr {
   border: none;
   padding: 20px;
   font-family: cursive;
+  margin-top: 30px;
 }
 
 .form-group label, 
@@ -539,6 +541,7 @@ hr {
 .container legend {
   font-size: 25px;
   margin-bottom: 20px; /* Add space below the legend */
+  text-align: center;
 }
 
 .form-group div {
