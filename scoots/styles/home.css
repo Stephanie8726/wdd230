@@ -707,6 +707,10 @@ img {
     margin-top: 30px;
   }
 
+  .map iframe {
+    margin-top: 10px;
+  }
+
 }
 
 
